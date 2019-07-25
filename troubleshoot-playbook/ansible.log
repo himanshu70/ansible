@@ -1,0 +1,148 @@
+2019-07-25 09:38:56,659 p=5407 u=student |  ERROR! Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to have been in '/home/student/troubleshoot-playbook/samba.yml': line 8, column 30, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    install_state: installed
+    random_var: This is colon: test
+                             ^ here
+
+2019-07-25 09:39:23,193 p=5451 u=student |  ERROR! Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to have been in '/home/student/troubleshoot-playbook/samba.yml': line 44, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+   - name: deliver samba config
+   ^ here
+
+2019-07-25 09:40:06,067 p=5487 u=student |  ERROR! Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to have been in '/home/student/troubleshoot-playbook/samba.yml': line 44, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+   - name: deliver samba config
+   ^ here
+
+2019-07-25 09:41:07,244 p=5538 u=student |  ERROR! Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to have been in '/home/student/troubleshoot-playbook/samba.yml': line 45, column 14, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  - name: deliver samba config
+     template:
+             ^ here
+
+2019-07-25 09:41:25,526 p=5565 u=student |  ERROR! Syntax Error while loading YAML.
+  found unacceptable key (unhashable type: 'AnsibleMapping')
+
+The error appears to have been in '/home/student/troubleshoot-playbook/samba.yml': line 14, column 15, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      name: samba
+      state: {{ install_state }}
+              ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes.  Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2019-07-25 09:42:01,763 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2019-07-25 09:42:01,770 p=5584 u=student |  PLAY [Install a samba server] ************************************************************************************************************************
+2019-07-25 09:42:01,811 p=5584 u=student |  TASK [Gathering Facts] *******************************************************************************************************************************
+2019-07-25 09:42:14,853 p=5584 u=student |  fatal: [servera.lab.exammple.com]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host servera.lab.exammple.com port 22: Connection timed out\r\n", "unreachable": true}
+2019-07-25 09:42:14,855 p=5584 u=student |  	to retry, use: --limit @/home/student/troubleshoot-playbook/samba.retry
+
+2019-07-25 09:42:14,855 p=5584 u=student |  PLAY RECAP *******************************************************************************************************************************************
+2019-07-25 09:42:14,856 p=5584 u=student |  servera.lab.exammple.com   : ok=0    changed=0    unreachable=1    failed=0   
+2019-07-25 09:42:49,045 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2019-07-25 09:42:49,052 p=5626 u=student |  PLAY [Install a samba server] ************************************************************************************************************************
+2019-07-25 09:42:49,068 p=5626 u=student |  TASK [Gathering Facts] *******************************************************************************************************************************
+2019-07-25 09:42:50,870 p=5626 u=student |  ok: [servera.lab.example.com]
+2019-07-25 09:42:50,894 p=5626 u=student |  TASK [install samba] *********************************************************************************************************************************
+2019-07-25 09:43:04,169 p=5626 u=student |  changed: [servera.lab.example.com]
+2019-07-25 09:43:04,187 p=5626 u=student |  TASK [install firewalld] *****************************************************************************************************************************
+2019-07-25 09:43:04,831 p=5626 u=student |  ok: [servera.lab.example.com]
+2019-07-25 09:43:04,850 p=5626 u=student |  TASK [debug install_state variable] ******************************************************************************************************************
+2019-07-25 09:43:04,900 p=5626 u=student |  ok: [servera.lab.example.com] => {
+    "msg": "The state for the samba service is installed"
+}
+2019-07-25 09:43:04,923 p=5626 u=student |  TASK [start samba] ***********************************************************************************************************************************
+2019-07-25 09:43:06,456 p=5626 u=student |  changed: [servera.lab.example.com]
+2019-07-25 09:43:06,475 p=5626 u=student |  TASK [start firewalld] *******************************************************************************************************************************
+2019-07-25 09:43:06,914 p=5626 u=student |  ok: [servera.lab.example.com]
+2019-07-25 09:43:06,936 p=5626 u=student |  TASK [configure firewall for samba] ******************************************************************************************************************
+2019-07-25 09:43:07,908 p=5626 u=student |  changed: [servera.lab.example.com]
+2019-07-25 09:43:07,930 p=5626 u=student |  TASK [deliver samba config] **************************************************************************************************************************
+2019-07-25 09:43:08,088 p=5626 u=student |  fatal: [servera.lab.example.com]: FAILED! => {"changed": false, "msg": "Could not find or access 'samba.j2'\nSearched in:\n\t/home/student/troubleshoot-playbook/templates/samba.j2\n\t/home/student/troubleshoot-playbook/samba.j2\n\t/home/student/troubleshoot-playbook/templates/samba.j2\n\t/home/student/troubleshoot-playbook/samba.j2 on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2019-07-25 09:43:08,090 p=5626 u=student |  	to retry, use: --limit @/home/student/troubleshoot-playbook/samba.retry
+
+2019-07-25 09:43:08,090 p=5626 u=student |  PLAY RECAP *******************************************************************************************************************************************
+2019-07-25 09:43:08,090 p=5626 u=student |  servera.lab.example.com    : ok=7    changed=3    unreachable=0    failed=1   
+2019-07-25 09:44:41,051 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2019-07-25 09:44:41,059 p=5810 u=student |  PLAY [Install a samba server] ************************************************************************************************************************
+2019-07-25 09:44:41,070 p=5810 u=student |  TASK [Gathering Facts] *******************************************************************************************************************************
+2019-07-25 09:44:42,473 p=5810 u=student |  ok: [servera.lab.example.com]
+2019-07-25 09:44:42,495 p=5810 u=student |  TASK [install samba] *********************************************************************************************************************************
+2019-07-25 09:44:43,343 p=5810 u=student |  ok: [servera.lab.example.com]
+2019-07-25 09:44:43,361 p=5810 u=student |  TASK [install firewalld] *****************************************************************************************************************************
+2019-07-25 09:44:43,975 p=5810 u=student |  ok: [servera.lab.example.com]
+2019-07-25 09:44:44,001 p=5810 u=student |  TASK [debug install_state variable] ******************************************************************************************************************
+2019-07-25 09:44:44,049 p=5810 u=student |  ok: [servera.lab.example.com] => {
+    "msg": "The state for the samba service is installed"
+}
+2019-07-25 09:44:44,073 p=5810 u=student |  TASK [start samba] ***********************************************************************************************************************************
+2019-07-25 09:44:44,677 p=5810 u=student |  ok: [servera.lab.example.com]
+2019-07-25 09:44:44,695 p=5810 u=student |  TASK [start firewalld] *******************************************************************************************************************************
+2019-07-25 09:44:45,124 p=5810 u=student |  ok: [servera.lab.example.com]
+2019-07-25 09:44:45,143 p=5810 u=student |  TASK [configure firewall for samba] ******************************************************************************************************************
+2019-07-25 09:44:46,061 p=5810 u=student |  ok: [servera.lab.example.com]
+2019-07-25 09:44:46,081 p=5810 u=student |  TASK [deliver samba config] **************************************************************************************************************************
+2019-07-25 09:44:47,168 p=5810 u=student |  changed: [servera.lab.example.com]
+2019-07-25 09:44:47,170 p=5810 u=student |  PLAY RECAP *******************************************************************************************************************************************
+2019-07-25 09:44:47,171 p=5810 u=student |  servera.lab.example.com    : ok=8    changed=1    unreachable=0    failed=0   
+2019-07-25 09:45:23,195 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2019-07-25 09:45:23,201 p=5910 u=student |  playbook: samba.yml
+2019-07-25 10:25:23,009 p=6714 u=student |  ERROR! Missing target hosts
+2019-07-25 10:26:34,860 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2019-07-25 10:26:35,810 p=6817 u=student |  servera.lab.example.com | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2019-07-25 10:26:48,212 p=6846 u=student |  ERROR! Extraneous options or arguments
+2019-07-25 10:26:57,064 p=6857 u=student |  ERROR! Extraneous options or arguments
+2019-07-25 10:27:08,346 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2019-07-25 10:27:08,793 p=6879 u=student |  servera.lab.example.com | FAILED! => {
+    "changed": false, 
+    "module_stderr": "Shared connection to servera.lab.example.com closed.\r\n", 
+    "module_stdout": "sudo: a password is required\r\n", 
+    "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", 
+    "rc": 1
+}
+2019-07-25 10:27:15,921 passlib.registry registered 'md5_crypt' handler: <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2019-07-25 10:27:16,845 p=6912 u=student |  servera.lab.example.com | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}

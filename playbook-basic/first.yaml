@@ -1,0 +1,17 @@
+---
+- name: First Play
+  hosts: webserver
+  tasks:
+    - name: install httpd
+      yum:
+          name: httpd
+          state: latest
+    - name: enable and start service
+      service: 
+          name: httpd
+          state: started
+          enabled: true
+    - name: copy site
+      copy:
+          src: site/index.html
+          dest: /var/www/html/index.html

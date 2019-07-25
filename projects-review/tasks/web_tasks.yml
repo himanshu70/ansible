@@ -1,0 +1,16 @@
+---
+  - name: Install httpd
+    yum:
+        name: httpd
+        state: latest
+
+  - name: Tuning configuration installed
+    copy:
+        src: ../files/tune.conf
+        dest: /etc/httpd/conf.d/tune.conf
+        owner: root
+        group: root
+        mode: 0644
+    notify:
+        - restart httpd
+

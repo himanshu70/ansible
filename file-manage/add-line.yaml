@@ -1,0 +1,11 @@
+---
+- name: add line in file
+  hosts: all
+  become: true
+  tasks:
+    - name: adding line in file
+      lineinfile:
+        path: /tmp/users.txt
+        line: added by himanshu
+        state: present
+        

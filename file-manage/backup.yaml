@@ -1,0 +1,10 @@
+---
+- name: secure copy backup
+  hosts: all
+  become: true
+  tasks:
+    - name: fetch files
+      fetch:
+        src: /var/log/secure
+        dest: secure-backup
+        flat: no

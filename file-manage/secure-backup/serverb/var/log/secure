@@ -1,0 +1,658 @@
+Nov 29 13:11:45 jegui polkitd[1570]: Loading rules from directory /etc/polkit-1/rules.d
+Nov 29 13:11:45 jegui polkitd[1570]: Loading rules from directory /usr/share/polkit-1/rules.d
+Nov 29 13:11:45 jegui polkitd[1570]: Finished loading, compiling and executing 2 rules
+Nov 29 13:11:45 jegui polkitd[1570]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Nov 29 13:11:48 jegui useradd[3072]: new group: name=student, GID=1000
+Nov 29 13:11:48 jegui useradd[3072]: new user: name=student, UID=1000, GID=1000, home=/home/student, shell=/bin/bash
+Nov 29 13:11:48 jegui useradd[3072]: add 'student' to group 'wheel'
+Nov 29 13:11:48 jegui useradd[3072]: add 'student' to shadow group 'wheel'
+Nov 29 13:11:48 jegui sshd[3174]: Server listening on 0.0.0.0 port 22.
+Nov 29 13:11:48 jegui sshd[3174]: Server listening on :: port 22.
+Nov 29 13:11:49 jegui sshd[3174]: Received signal 15; terminating.
+Nov 29 13:11:49 jegui sshd[3238]: Server listening on 0.0.0.0 port 22.
+Nov 29 13:11:49 jegui sshd[3238]: Server listening on :: port 22.
+Nov 29 13:12:43 jegui groupadd[12274]: group added to /etc/group: name=abrt, GID=173
+Nov 29 13:12:43 jegui groupadd[12274]: group added to /etc/gshadow: name=abrt
+Nov 29 13:12:43 jegui groupadd[12274]: new group: name=abrt, GID=173
+Nov 29 13:12:43 jegui useradd[12279]: new user: name=abrt, UID=173, GID=173, home=/etc/abrt, shell=/sbin/nologin
+Nov 29 13:12:47 jegui groupadd[12417]: group added to /etc/group: name=libstoragemgmt, GID=994
+Nov 29 13:12:47 jegui groupadd[12417]: group added to /etc/gshadow: name=libstoragemgmt
+Nov 29 13:12:47 jegui groupadd[12417]: new group: name=libstoragemgmt, GID=994
+Nov 29 13:12:47 jegui useradd[12422]: new user: name=libstoragemgmt, UID=997, GID=994, home=/var/run/lsm, shell=/sbin/nologin
+Nov 29 13:12:49 jegui groupadd[12483]: group added to /etc/group: name=stapusr, GID=156
+Nov 29 13:12:49 jegui groupadd[12483]: group added to /etc/gshadow: name=stapusr
+Nov 29 13:12:49 jegui groupadd[12483]: new group: name=stapusr, GID=156
+Nov 29 13:12:49 jegui groupadd[12488]: group added to /etc/group: name=stapsys, GID=157
+Nov 29 13:12:49 jegui groupadd[12488]: group added to /etc/gshadow: name=stapsys
+Nov 29 13:12:49 jegui groupadd[12488]: new group: name=stapsys, GID=157
+Nov 29 13:12:49 jegui groupadd[12493]: group added to /etc/group: name=stapdev, GID=158
+Nov 29 13:12:49 jegui groupadd[12493]: group added to /etc/gshadow: name=stapdev
+Nov 29 13:12:49 jegui groupadd[12493]: new group: name=stapdev, GID=158
+Nov 29 13:12:58 jegui groupadd[12627]: group added to /etc/group: name=ntp, GID=38
+Nov 29 13:12:58 jegui groupadd[12627]: group added to /etc/gshadow: name=ntp
+Nov 29 13:12:58 jegui groupadd[12627]: new group: name=ntp, GID=38
+Nov 29 13:12:58 jegui useradd[12631]: new user: name=ntp, UID=38, GID=38, home=/etc/ntp, shell=/sbin/nologin
+Nov 29 13:13:15 jegui groupadd[12689]: group added to /etc/group: name=slocate, GID=21
+Nov 29 13:13:15 jegui groupadd[12689]: group added to /etc/gshadow: name=slocate
+Nov 29 13:13:15 jegui groupadd[12689]: new group: name=slocate, GID=21
+Nov 29 13:14:05 jegui passwd: pam_unix(passwd:chauthtok): password changed for root
+Jul 21 23:39:36 jegui polkitd[2566]: Loading rules from directory /etc/polkit-1/rules.d
+Jul 21 23:39:36 jegui polkitd[2566]: Loading rules from directory /usr/share/polkit-1/rules.d
+Jul 21 23:39:36 jegui polkitd[2566]: Finished loading, compiling and executing 2 rules
+Jul 21 23:39:36 jegui polkitd[2566]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Jul 21 23:40:17 jegui sshd[3097]: Server listening on 0.0.0.0 port 22.
+Jul 21 23:40:17 jegui sshd[3097]: Server listening on :: port 22.
+Jul 21 23:40:19 jegui useradd[3387]: new group: name=devops, GID=1001
+Jul 21 23:40:19 jegui useradd[3387]: new user: name=devops, UID=1001, GID=1001, home=/home/devops, shell=/bin/bash
+Jul 22 01:41:34 jegui sshd[32260]: Bad protocol version identification 'brain' from 172.25.250.254 port 42708
+Jul 22 02:52:11 jegui sshd[32333]: Accepted publickey for student from 172.25.250.254 port 42722 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 22 02:52:12 jegui sshd[32333]: pam_unix(sshd:session): session opened for user student by (uid=0)
+Jul 22 02:52:40 jegui sshd[32427]: Accepted publickey for devops from 172.25.250.254 port 42726 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 22 02:52:40 jegui sshd[32427]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 22 02:53:00 jegui sshd[32521]: Accepted publickey for student from 172.25.250.254 port 42730 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 22 02:53:00 jegui sshd[32521]: pam_unix(sshd:session): session opened for user student by (uid=0)
+Jul 22 02:53:12 jegui sshd[32336]: Received disconnect from 172.25.250.254 port 42722:11: disconnected by user
+Jul 22 02:53:12 jegui sshd[32336]: Disconnected from 172.25.250.254 port 42722
+Jul 22 02:53:12 jegui sshd[32333]: pam_unix(sshd:session): session closed for user student
+Jul 22 02:53:41 jegui sshd[32430]: Received disconnect from 172.25.250.254 port 42726:11: disconnected by user
+Jul 22 02:53:41 jegui sshd[32430]: Disconnected from 172.25.250.254 port 42726
+Jul 22 02:53:41 jegui sshd[32427]: pam_unix(sshd:session): session closed for user devops
+Jul 22 02:54:01 jegui sshd[32524]: Received disconnect from 172.25.250.254 port 42730:11: disconnected by user
+Jul 22 02:54:01 jegui sshd[32524]: Disconnected from 172.25.250.254 port 42730
+Jul 22 02:54:01 jegui sshd[32521]: pam_unix(sshd:session): session closed for user student
+Jul 22 02:54:38 jegui sshd[32620]: Accepted publickey for student from 172.25.250.254 port 42734 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 22 02:54:38 jegui sshd[32620]: pam_unix(sshd:session): session opened for user student by (uid=0)
+Jul 22 02:55:18 jegui sudo: student : a password is required ; TTY=pts/0 ; PWD=/home/student ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-jjvecvhoijzvamffsoemmdljbpqqjmut; /usr/bin/python /home/student/.ansible/tmp/ansible-tmp-1563778518.18-189145008871324/AnsiballZ_command.py
+Jul 22 02:55:39 jegui sshd[330]: Accepted publickey for devops from 172.25.250.254 port 42738 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 22 02:55:39 jegui sshd[330]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 22 02:55:39 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-fgjaqepxndrzyvwxccxqrvajffadpgut; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563778538.94-37524557480997/AnsiballZ_command.py
+Jul 22 02:55:39 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 02:55:39 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 02:56:18 jegui sshd[32623]: Received disconnect from 172.25.250.254 port 42734:11: disconnected by user
+Jul 22 02:56:18 jegui sshd[32623]: Disconnected from 172.25.250.254 port 42734
+Jul 22 02:56:18 jegui sshd[32620]: pam_unix(sshd:session): session closed for user student
+Jul 22 02:56:39 jegui sshd[333]: Received disconnect from 172.25.250.254 port 42738:11: disconnected by user
+Jul 22 02:56:39 jegui sshd[333]: Disconnected from 172.25.250.254 port 42738
+Jul 22 02:56:39 jegui sshd[330]: pam_unix(sshd:session): session closed for user devops
+Jul 22 04:31:24 jegui sshd[542]: Accepted publickey for devops from 172.25.250.254 port 42740 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 22 04:31:24 jegui sshd[542]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 22 04:32:41 jegui sshd[545]: Received disconnect from 172.25.250.254 port 42740:11: disconnected by user
+Jul 22 04:32:41 jegui sshd[545]: Disconnected from 172.25.250.254 port 42740
+Jul 22 04:32:41 jegui sshd[542]: pam_unix(sshd:session): session closed for user devops
+Jul 22 04:33:41 jegui sshd[971]: Accepted publickey for devops from 172.25.250.254 port 42746 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 22 04:33:42 jegui sshd[971]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 22 04:33:42 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-wgjakxnbhxuwwxumrszlhextdkwkkrhc; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563784421.71-135147736048075/AnsiballZ_setup.py
+Jul 22 04:33:42 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:33:43 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:33:43 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-bydozzowgzpfjjpioaivtctacpbcqzex; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563784423.47-226906365877990/AnsiballZ_yum.py
+Jul 22 04:33:43 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:33:52 jegui groupadd[1195]: group added to /etc/group: name=apache, GID=48
+Jul 22 04:33:53 jegui groupadd[1195]: group added to /etc/gshadow: name=apache
+Jul 22 04:33:53 jegui groupadd[1195]: new group: name=apache, GID=48
+Jul 22 04:33:53 jegui useradd[1199]: new user: name=apache, UID=48, GID=48, home=/usr/share/httpd, shell=/sbin/nologin
+Jul 22 04:33:57 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:34:12 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-zayadpdlaidsoghsxvrohcngiqwwihvc; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563784451.53-97910418768798/AnsiballZ_setup.py
+Jul 22 04:34:12 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:34:12 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:34:13 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-mehtwioalecywdasqrqblgugqzhyvnpg; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563784452.89-150421240822864/AnsiballZ_yum.py
+Jul 22 04:34:13 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:34:14 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:35:14 jegui sshd[974]: Received disconnect from 172.25.250.254 port 42746:11: disconnected by user
+Jul 22 04:35:14 jegui sshd[974]: Disconnected from 172.25.250.254 port 42746
+Jul 22 04:35:14 jegui sshd[971]: pam_unix(sshd:session): session closed for user devops
+Jul 22 04:41:23 jegui sshd[1479]: Accepted publickey for devops from 172.25.250.254 port 42748 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 22 04:41:23 jegui sshd[1479]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 22 04:41:24 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-yelyakdoknbqdzjguhicbrczhdzqomqn; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563784883.09-53253566029789/AnsiballZ_setup.py
+Jul 22 04:41:24 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:41:24 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:41:25 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-jvvljgxatoihrzhicjpjgniazzwviofi; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563784884.91-210302333719869/AnsiballZ_yum.py
+Jul 22 04:41:25 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:41:26 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:41:26 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-imfrouaujmdmwghafkovqietrpitisfv; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563784886.43-78238888895900/AnsiballZ_systemd.py
+Jul 22 04:41:26 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:41:27 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:41:27 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-viqbszatagobxfjdgtwsgvdtgovmicsu; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563784887.18-204824403308481/AnsiballZ_stat.py
+Jul 22 04:41:27 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:41:27 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:42:27 jegui sshd[1482]: Received disconnect from 172.25.250.254 port 42748:11: disconnected by user
+Jul 22 04:42:27 jegui sshd[1482]: Disconnected from 172.25.250.254 port 42748
+Jul 22 04:42:27 jegui sshd[1479]: pam_unix(sshd:session): session closed for user devops
+Jul 22 04:45:29 jegui sshd[1888]: Accepted publickey for student from 172.25.250.254 port 42756 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 22 04:45:29 jegui sshd[1888]: pam_unix(sshd:session): session opened for user student by (uid=0)
+Jul 22 04:46:07 jegui sshd[1891]: Received disconnect from 172.25.250.254 port 42756:11: disconnected by user
+Jul 22 04:46:07 jegui sshd[1891]: Disconnected from 172.25.250.254 port 42756
+Jul 22 04:46:07 jegui sshd[1888]: pam_unix(sshd:session): session closed for user student
+Jul 22 04:48:20 jegui sshd[1939]: Accepted publickey for devops from 172.25.250.254 port 42760 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 22 04:48:20 jegui sshd[1939]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 22 04:48:20 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-pfmlrubeqlsxoqhqtqnqawkwsrrlmsyu; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785299.99-170644122274184/AnsiballZ_setup.py
+Jul 22 04:48:21 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:48:21 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:48:21 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-quidpdmgkzqtwqlrcrmeioyqiptvrkvb; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785301.56-271451420155776/AnsiballZ_yum.py
+Jul 22 04:48:21 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:48:22 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:48:23 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-dfwiofokcrccavgqrfbimyjscemhkczk; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785303.02-164016525427456/AnsiballZ_systemd.py
+Jul 22 04:48:23 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:48:23 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:48:24 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ssomvnylrdcmmtsqirrsvgtsbqlttzdo; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785303.71-40292935589036/AnsiballZ_stat.py
+Jul 22 04:48:24 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:48:24 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:48:32 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-fykyyjasdhxrmbaquvnzpzhwmfoufkzg; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785312.13-124293666323462/AnsiballZ_setup.py
+Jul 22 04:48:32 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:48:33 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:48:33 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-vegqvazgtqcryrqlosruhmyzmhqcgoge; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785313.24-74373439442003/AnsiballZ_yum.py
+Jul 22 04:48:33 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:48:35 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:48:35 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ffcabwdquhamwbkdjtolqpsnbrfeqxzh; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785315.19-275456278605483/AnsiballZ_systemd.py
+Jul 22 04:48:35 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:48:35 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:48:36 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-tdcfbwyrmdjkjrptjddgmmwfxwiddjaw; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785315.85-86392068501624/AnsiballZ_stat.py
+Jul 22 04:48:36 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:48:36 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:49:25 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-lulvzcbppiqwgfeuahnfyfhjsglawyhd; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785364.79-165161778271853/AnsiballZ_setup.py
+Jul 22 04:49:25 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:49:25 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:49:26 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-oxskpftfmerwjuowefbyyfjdakwywszp; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785365.93-20875633258196/AnsiballZ_yum.py
+Jul 22 04:49:26 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:49:27 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:49:27 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-klvxczpycheqdjjmesvcyewmtojixgps; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785367.4-191738318253110/AnsiballZ_systemd.py
+Jul 22 04:49:27 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:49:27 jegui polkitd[2566]: Registered Authentication Agent for unix-process:3074:1861763 (system bus name :1.140 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Jul 22 04:49:28 jegui polkitd[2566]: Unregistered Authentication Agent for unix-process:3074:1861763 (system bus name :1.140, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+Jul 22 04:49:28 jegui polkitd[2566]: Registered Authentication Agent for unix-process:3094:1861781 (system bus name :1.141 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Jul 22 04:49:28 jegui polkitd[2566]: Unregistered Authentication Agent for unix-process:3094:1861781 (system bus name :1.141, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+Jul 22 04:49:28 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:49:28 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-jcvrqtvmiqsygkdnbgfygqfnclsqwhdd; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785368.41-3148895097558/AnsiballZ_stat.py
+Jul 22 04:49:28 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:49:28 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:49:29 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-mppxucdbrolijewovenfeodsnoiojrja; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785368.41-3148895097558/AnsiballZ_copy.py
+Jul 22 04:49:29 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:49:29 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:49:46 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-fzpjoaywtcyazszdmxmkzgpizixmlhao; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785385.2-266593144192379/AnsiballZ_setup.py
+Jul 22 04:49:46 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:49:47 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:49:47 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-rvfwnyccewtempkvjwvwxjeamhqprrjt; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785387.19-261774180065792/AnsiballZ_yum.py
+Jul 22 04:49:47 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:49:48 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:49:49 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-sryiwmxajlwxxlgttugdhklqeldmgnbs; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785388.67-230935930935190/AnsiballZ_systemd.py
+Jul 22 04:49:49 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:49:49 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:49:49 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-kcvaxeooxkavhpzyxacwloaxaescwvuk; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785389.31-184146597640861/AnsiballZ_stat.py
+Jul 22 04:49:49 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:49:49 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:49:50 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-xmqccwyittwowgygbnkxyzlivrdhmvae; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785389.31-184146597640861/AnsiballZ_file.py
+Jul 22 04:49:50 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:49:50 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:50:47 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-bldrolhjvdkyeebqgusgyareuhzsitlc; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785447.24-40072296153596/AnsiballZ_setup.py
+Jul 22 04:50:47 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:50:48 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:50:48 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-qzosemyvkhqtlxzsieeamjmkzqzxhawv; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785448.47-196164049058172/AnsiballZ_yum.py
+Jul 22 04:50:48 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:50:49 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:50:50 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-dtrcriyjrkyivbjvwmhjkovndqnctenv; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785449.99-135685153157997/AnsiballZ_systemd.py
+Jul 22 04:50:50 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:50:50 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:50:51 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-yutocbfgczzchhpcpazwcojorfzlukhx; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785450.76-13749990404606/AnsiballZ_stat.py
+Jul 22 04:50:51 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:50:51 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:50:51 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-svwlrrsqrylgaahynzsmpubsqfyuqibp; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785450.76-13749990404606/AnsiballZ_file.py
+Jul 22 04:50:51 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:50:51 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:50:54 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-njmymqmqvizpkaewzqmmykacsfpdjadp; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785454.31-266588610757869/AnsiballZ_setup.py
+Jul 22 04:50:54 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:50:55 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:50:55 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-uzgcvqjdvpgqibzztvqqjiqqpfbaaxfv; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785455.48-16415004466434/AnsiballZ_yum.py
+Jul 22 04:50:55 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:50:56 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:50:57 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-tbspayrdqucmuvyaeqozqfvotjocxakm; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785456.96-46465298915837/AnsiballZ_systemd.py
+Jul 22 04:50:57 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:50:57 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:50:58 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-phitceaofjccduiwfmsnydsrqybrpgbl; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785457.64-252533170893046/AnsiballZ_stat.py
+Jul 22 04:50:58 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:50:58 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:50:58 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ibspolvbxpvvdvyvzeknmxbrhbtrzhmy; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785457.64-252533170893046/AnsiballZ_file.py
+Jul 22 04:50:58 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:50:58 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:51:43 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-etdiyebrmrwqrxojflsotnipmauvxfvs; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785502.53-222597454276466/AnsiballZ_setup.py
+Jul 22 04:51:43 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:51:43 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:51:44 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-jvmvtmoaqxnlptkopedphictsoveliav; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785503.88-161523487158346/AnsiballZ_yum.py
+Jul 22 04:51:44 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:51:45 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:51:45 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-knjuzxoscdlmoraqnckxcuwbzsuapsyf; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785505.37-133110411100199/AnsiballZ_systemd.py
+Jul 22 04:51:45 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:51:45 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:51:46 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ebhylizzfpivqrezmcxjnbxwldbghuwo; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785506.07-74656219801427/AnsiballZ_stat.py
+Jul 22 04:51:46 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:51:46 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:51:46 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-acmaiyvgqfqyfysqjpfjpwjsjuwmatrc; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563785506.07-74656219801427/AnsiballZ_file.py
+Jul 22 04:51:46 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 04:51:47 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 04:52:47 jegui sshd[1942]: Received disconnect from 172.25.250.254 port 42760:11: disconnected by user
+Jul 22 04:52:47 jegui sshd[1942]: Disconnected from 172.25.250.254 port 42760
+Jul 22 04:52:47 jegui sshd[1939]: pam_unix(sshd:session): session closed for user devops
+Jul 22 05:27:28 jegui sshd[5165]: Accepted publickey for devops from 172.25.250.254 port 42772 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 22 05:27:28 jegui sshd[5165]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 22 05:27:29 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ktslmydbyjmqnauhtjyxtxkhsbkisudd; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787648.08-86055869232129/AnsiballZ_setup.py
+Jul 22 05:27:29 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:27:29 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:27:30 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-wnvupdxqhkaltvztlkvclihocuchseta; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787649.76-138796684393411/AnsiballZ_yum.py
+Jul 22 05:27:30 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:27:30 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:28:30 jegui sshd[5168]: Received disconnect from 172.25.250.254 port 42772:11: disconnected by user
+Jul 22 05:28:30 jegui sshd[5168]: Disconnected from 172.25.250.254 port 42772
+Jul 22 05:28:30 jegui sshd[5165]: pam_unix(sshd:session): session closed for user devops
+Jul 22 05:28:38 jegui sshd[5381]: Accepted publickey for devops from 172.25.250.254 port 42778 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 22 05:28:38 jegui sshd[5381]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 22 05:28:39 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-oiysgspmyaimhfnsgqeuskhmpstiufec; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787718.39-16326362137656/AnsiballZ_setup.py
+Jul 22 05:28:39 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:28:39 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:28:40 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-qwqwyqtnduvyijapyvoyytubokuvtnzn; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787719.96-149168004901329/AnsiballZ_firewalld.py
+Jul 22 05:28:40 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:28:40 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:28:41 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-zuxzskmdepbvrajrttjnudpqlkqvydfx; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787721.03-31554129584629/AnsiballZ_yum.py
+Jul 22 05:28:41 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:28:42 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:28:42 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-snzropavqkhtrxigzxhdlcfifoefufsz; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787722.57-171868394235176/AnsiballZ_systemd.py
+Jul 22 05:28:42 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:28:43 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:28:43 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-eyozfcpqvgucaqwhofbyotgwbvbtchnw; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787723.26-183532441955858/AnsiballZ_stat.py
+Jul 22 05:28:43 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:28:43 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:28:44 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-deukkyfmnrhgmoiymnxagtfdpxptzsnx; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787723.26-183532441955858/AnsiballZ_file.py
+Jul 22 05:28:44 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:28:44 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:28:50 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-pmdobommlojfkbtaietgmrjmnijcpiie; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787730.1-271388208908039/AnsiballZ_setup.py
+Jul 22 05:28:50 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:28:51 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:28:51 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-jowanixlwbctrtflzkbnxvlzzpvrrhqc; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787731.39-232410116932650/AnsiballZ_firewalld.py
+Jul 22 05:28:51 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:28:52 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:28:52 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-wfvotgxcsouscsxculqgwbbzhhcrxkji; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787732.46-247498219227866/AnsiballZ_yum.py
+Jul 22 05:28:52 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:28:54 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:28:54 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-zlkcdxbavndclhcenmvxxzspkfgicjqf; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787734.41-11698113099458/AnsiballZ_systemd.py
+Jul 22 05:28:54 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:28:54 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:28:55 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-vmluakhdhvhnuhkhnvkcsqkbqemgejcj; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787735.09-39229699910812/AnsiballZ_stat.py
+Jul 22 05:28:55 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:28:55 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:28:55 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-zbusrwzxzqnxeprjjzjjrptyjidvxyjo; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787735.09-39229699910812/AnsiballZ_file.py
+Jul 22 05:28:55 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:28:56 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:29:56 jegui sshd[5384]: Received disconnect from 172.25.250.254 port 42778:11: disconnected by user
+Jul 22 05:29:56 jegui sshd[5384]: Disconnected from 172.25.250.254 port 42778
+Jul 22 05:29:56 jegui sshd[5381]: pam_unix(sshd:session): session closed for user devops
+Jul 22 05:30:07 jegui sshd[6488]: Accepted publickey for devops from 172.25.250.254 port 42780 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 22 05:30:07 jegui sshd[6488]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 22 05:30:08 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-acjwwlrglyrnlzjegjyptyjealyiatui; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787807.57-151524937006244/AnsiballZ_setup.py
+Jul 22 05:30:08 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:30:09 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:30:09 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-pzydlpgdqgrmycupiasmtzjoyafkmilu; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787809.25-168076325147940/AnsiballZ_firewalld.py
+Jul 22 05:30:09 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:30:10 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:30:10 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-iragliejimulzugbkckoenopjfnzcghu; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787810.3-126049878748974/AnsiballZ_setup.py
+Jul 22 05:30:10 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:30:10 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:30:11 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-cynvkhqobxqubaajqpndzrzkienbrrci; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787811.14-145744556217793/AnsiballZ_yum.py
+Jul 22 05:30:11 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:30:12 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:30:13 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-axsibjgogwywksbyygjbbeknonkrmyqk; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787812.74-196411809909816/AnsiballZ_systemd.py
+Jul 22 05:30:13 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:30:13 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:30:13 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-tplfixzuvmwawyxrfsqphrsqszcaxfwp; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787813.45-154488761446103/AnsiballZ_stat.py
+Jul 22 05:30:13 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:30:13 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:30:14 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-rzxxegygdlyrcvblyskehvkelsmpahkn; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787813.45-154488761446103/AnsiballZ_file.py
+Jul 22 05:30:14 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:30:14 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:31:14 jegui sshd[6491]: Received disconnect from 172.25.250.254 port 42780:11: disconnected by user
+Jul 22 05:31:14 jegui sshd[6491]: Disconnected from 172.25.250.254 port 42780
+Jul 22 05:31:14 jegui sshd[6488]: pam_unix(sshd:session): session closed for user devops
+Jul 22 05:32:03 jegui sshd[7158]: Accepted publickey for devops from 172.25.250.254 port 42784 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 22 05:32:03 jegui sshd[7158]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 22 05:32:04 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-nhzfqnrwcxarzrncgmlaenfgcppbqusf; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787923.38-179628242548701/AnsiballZ_setup.py
+Jul 22 05:32:04 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:32:04 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:32:05 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-bsfqzqndpxaxhwfvlymlhrglzhyvbtme; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787925.07-33376038977419/AnsiballZ_firewalld.py
+Jul 22 05:32:05 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:32:05 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:32:06 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-qpravngfyqtxkjdmglmyzoielmpieqtx; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787926.1-97305906742691/AnsiballZ_setup.py
+Jul 22 05:32:06 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:32:06 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:32:07 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-nznvkxifuwxisgonqjmdlkhlzdswxrwm; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787926.96-67821049604806/AnsiballZ_yum.py
+Jul 22 05:32:07 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:32:08 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:32:09 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-zytzqsbypdyaimjqadabvgtzquszanjg; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787928.97-121980095780219/AnsiballZ_systemd.py
+Jul 22 05:32:09 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:32:09 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:32:10 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-nxjeahyjpycznresbyivwhjobjjhunhz; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787929.72-126996156753579/AnsiballZ_stat.py
+Jul 22 05:32:10 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:32:10 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:32:10 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-lamdykgxfotakslskmwuxjjislvbmywe; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787929.72-126996156753579/AnsiballZ_file.py
+Jul 22 05:32:10 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:32:10 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:32:26 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-fjshzfitcofwaxiynwhnjyqiwyettuuc; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787946.06-106584189070838/AnsiballZ_setup.py
+Jul 22 05:32:26 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:32:27 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:32:27 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-rntucguxafbmfkpxrnzlhakkdlcyuxnx; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787947.17-208803219334456/AnsiballZ_firewalld.py
+Jul 22 05:32:27 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:32:28 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:32:28 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-polbivhtrmivyqmkmgjaljrdgabmujbe; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787948.26-181366360685301/AnsiballZ_setup.py
+Jul 22 05:32:28 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:32:29 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:32:29 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-kezxflidpbkjeuwqxualxavtxmujnsjt; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787949.23-177646809161188/AnsiballZ_yum.py
+Jul 22 05:32:29 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:32:30 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:32:31 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-yoyybxzappekeafoxsxoacnvnqfljxqz; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787951.27-266105478805294/AnsiballZ_systemd.py
+Jul 22 05:32:31 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:32:31 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:32:32 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-vsynqaelmipkbkrmmnsjezfzjrcwjxud; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787952.01-64330665720977/AnsiballZ_stat.py
+Jul 22 05:32:32 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:32:32 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:32:32 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-laxmfiifyyjlyekpdfudpsiohtqrlyom; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787952.01-64330665720977/AnsiballZ_file.py
+Jul 22 05:32:32 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:32:32 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:32:42 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-eevdkxufaqjzdrhkbtxtpkqwvelkhqmx; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787961.54-148479123478485/AnsiballZ_setup.py
+Jul 22 05:32:42 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:32:42 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:32:43 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-mclpwnozkmyhjezkzmznaijywapvsypq; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787962.76-82732714084180/AnsiballZ_firewalld.py
+Jul 22 05:32:43 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:32:43 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:32:44 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-yquuzmoaoijjjlowxssazmucfrvkulzi; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787963.95-72252588091323/AnsiballZ_setup.py
+Jul 22 05:32:44 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:32:44 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:32:45 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ovokjxdodgwhtcpvwpqtwbvrfrzkjump; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787964.78-34129568618567/AnsiballZ_yum.py
+Jul 22 05:32:45 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:32:46 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:32:46 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-rklwcoquzhiqicocpgxwnluhlxbgarsl; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787966.26-165854427024027/AnsiballZ_systemd.py
+Jul 22 05:32:46 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:32:46 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:32:47 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-vaoplpzlncgfgpaokqvpdcdnoyookfyj; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787967.06-189982883387705/AnsiballZ_stat.py
+Jul 22 05:32:47 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:32:47 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:32:47 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-seklksrhszocwuonrffdqxndvaiyeipb; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563787967.06-189982883387705/AnsiballZ_file.py
+Jul 22 05:32:47 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:32:48 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:33:21 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-epuxlfswpttvtzwcstzmedlrsllmrpkt; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563788001.0-279085789673661/AnsiballZ_setup.py
+Jul 22 05:33:21 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:33:21 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:33:22 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-dlgctpxjchlfgwcjsmirqutduqtzobck; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563788002.16-163361779879709/AnsiballZ_firewalld.py
+Jul 22 05:33:22 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:33:23 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:33:23 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-owdeumcrbdhuyqyaxqtrrcvlwyvbgpel; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563788003.22-162106595528420/AnsiballZ_setup.py
+Jul 22 05:33:23 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:33:23 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:33:24 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-mhqvyvktplfphopqutjxiuvhlraefhhu; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563788004.06-138364339313743/AnsiballZ_yum.py
+Jul 22 05:33:24 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:33:25 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:33:25 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-yyownvtqozvbrhmgffhxrvfgewpipefm; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563788005.58-24175631551019/AnsiballZ_systemd.py
+Jul 22 05:33:25 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:33:26 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:33:26 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-xehjkpmidxuobtompybaknayjdmpltwd; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563788006.28-149704471718182/AnsiballZ_stat.py
+Jul 22 05:33:26 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:33:26 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:33:27 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-limuediakcfddqiunvqixckkxjvolaxe; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563788006.28-149704471718182/AnsiballZ_file.py
+Jul 22 05:33:27 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:33:27 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:33:51 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-fsvogjpehwhpcbfxrfrbipnkpvirvlcs; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563788031.1-220883349723737/AnsiballZ_setup.py
+Jul 22 05:33:51 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:33:52 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:33:52 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-mjsitosogvprclkmuywqtjfarqfrbwkz; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563788032.23-179441208606828/AnsiballZ_firewalld.py
+Jul 22 05:33:52 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:33:53 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:33:53 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-yzszlfpwthxmytuftgkpqkwjjxynbabv; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563788033.27-49536202277362/AnsiballZ_setup.py
+Jul 22 05:33:53 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:33:53 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:33:54 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-merrwiaaauuzyykcwekvodglnkryijfl; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563788034.09-243434070139056/AnsiballZ_yum.py
+Jul 22 05:33:54 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:33:55 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:33:55 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-gwdknmroabynwjguvcvhpzziutrratsn; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563788035.59-189545697695487/AnsiballZ_systemd.py
+Jul 22 05:33:55 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:33:56 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:33:56 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-vbxcgrvcltolawuqwbiozreqdvnltrvn; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563788036.3-106572546782543/AnsiballZ_stat.py
+Jul 22 05:33:56 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:33:56 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:33:57 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-vobfyxnkunnoqmpfmvwscqmkciuasagv; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563788036.3-106572546782543/AnsiballZ_file.py
+Jul 22 05:33:57 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:33:57 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:34:57 jegui sshd[7161]: Received disconnect from 172.25.250.254 port 42784:11: disconnected by user
+Jul 22 05:34:57 jegui sshd[7161]: Disconnected from 172.25.250.254 port 42784
+Jul 22 05:34:57 jegui sshd[7158]: pam_unix(sshd:session): session closed for user devops
+Jul 22 05:48:28 jegui sshd[10492]: Accepted publickey for devops from 172.25.250.254 port 42800 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 22 05:48:29 jegui sshd[10492]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 22 05:48:29 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-imewoacqqpgjvdooaziycdgojwxdjdwq; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563788908.82-155220049148799/AnsiballZ_setup.py
+Jul 22 05:48:29 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:48:30 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:48:31 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ajcnsgivocjvbgcmmbsjfvvpqjyeqrca; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563788910.7-66105346686226/AnsiballZ_firewalld.py
+Jul 22 05:48:31 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:48:31 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:48:32 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-divljqwogmowzjhumrpflfamvnrhoovt; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563788911.99-105465591429458/AnsiballZ_setup.py
+Jul 22 05:48:32 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:48:32 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:48:33 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-kheihxczjxnfpnckigxqlwmqitdysnea; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563788912.95-87976528225794/AnsiballZ_yum.py
+Jul 22 05:48:33 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:48:52 jegui groupadd[10919]: group added to /etc/group: name=mysql, GID=27
+Jul 22 05:48:52 jegui groupadd[10919]: group added to /etc/gshadow: name=mysql
+Jul 22 05:48:52 jegui groupadd[10919]: new group: name=mysql, GID=27
+Jul 22 05:48:52 jegui useradd[10923]: new user: name=mysql, UID=27, GID=27, home=/var/lib/mysql, shell=/sbin/nologin
+Jul 22 05:49:03 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:49:04 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-sqgzjvmsznxbhmmvhlvdkwvoixcfarzc; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563788943.56-135772832446935/AnsiballZ_systemd.py
+Jul 22 05:49:04 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:49:04 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:49:04 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ivaddgqzpajcjglpshbguuqgnjhzjesn; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563788944.36-56959427978069/AnsiballZ_stat.py
+Jul 22 05:49:04 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:49:04 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:49:05 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-xjcvourguycppolvgxmlujsfmfgtphdd; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563788944.36-56959427978069/AnsiballZ_file.py
+Jul 22 05:49:05 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:49:05 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:50:05 jegui sshd[10495]: Received disconnect from 172.25.250.254 port 42800:11: disconnected by user
+Jul 22 05:50:05 jegui sshd[10495]: Disconnected from 172.25.250.254 port 42800
+Jul 22 05:50:05 jegui sshd[10492]: pam_unix(sshd:session): session closed for user devops
+Jul 22 05:51:52 jegui sshd[11209]: Accepted publickey for devops from 172.25.250.254 port 42808 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 22 05:51:53 jegui sshd[11209]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 22 05:51:53 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-dtkjvngcixbdhgajjqryaigcepmeggjr; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563789112.68-222795917951945/AnsiballZ_setup.py
+Jul 22 05:51:53 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:51:54 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:51:54 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-rdgzbyykwisedqkfvqabhducwygbnhgu; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563789114.49-126206825489642/AnsiballZ_firewalld.py
+Jul 22 05:51:54 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:51:55 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:51:56 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-yknjgzrqftxswvurwmpbkmsstsyzurvi; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563789115.91-32906518872220/AnsiballZ_setup.py
+Jul 22 05:51:56 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:51:56 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:51:57 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-cbwbstxtyvbyeynykgbgtdngymhpaija; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563789116.72-162666882271088/AnsiballZ_yum.py
+Jul 22 05:51:57 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:51:58 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:51:58 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-liuwvmpnevzkmigpcwrkhqsfrmwdvvsn; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563789118.38-112557987514137/AnsiballZ_systemd.py
+Jul 22 05:51:58 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:51:58 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:52:30 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-xcwtwrdeddazuvklqtnygktbxslyhhcu; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563789150.18-207733722557554/AnsiballZ_setup.py
+Jul 22 05:52:30 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:52:31 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:52:31 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-erxodabvkbdfflezzperjtspddunrjog; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563789151.33-80446599667508/AnsiballZ_firewalld.py
+Jul 22 05:52:31 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:52:32 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:52:32 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-oveetdeotjfhdlgsodtmhwtqjjxcwidu; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563789152.39-120031444441206/AnsiballZ_setup.py
+Jul 22 05:52:32 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:52:33 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:52:33 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-yayfkdahidmevtdxmvmdrrjzlkbxcyky; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563789153.36-246364732958220/AnsiballZ_yum.py
+Jul 22 05:52:33 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:52:34 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:52:35 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-gfmoscvftpdymxrsxppnevngjudxmaqy; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563789155.0-250925859605088/AnsiballZ_systemd.py
+Jul 22 05:52:35 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:52:35 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:53:35 jegui sshd[11212]: Received disconnect from 172.25.250.254 port 42808:11: disconnected by user
+Jul 22 05:53:35 jegui sshd[11212]: Disconnected from 172.25.250.254 port 42808
+Jul 22 05:53:35 jegui sshd[11209]: pam_unix(sshd:session): session closed for user devops
+Jul 22 05:54:48 jegui sshd[12250]: Accepted publickey for devops from 172.25.250.254 port 42816 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 22 05:54:48 jegui sshd[12250]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 22 05:54:49 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-mvexczuboeeplfmddanwrnkvcvarosgv; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563789288.57-275967078973976/AnsiballZ_setup.py
+Jul 22 05:54:49 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:54:50 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:54:50 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ivwdcsgufeodtrcnvbcffopxrkzcatsy; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563789290.28-66303343241129/AnsiballZ_firewalld.py
+Jul 22 05:54:50 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:54:51 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:54:51 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-hzmuvtuhvtskzsypgbmhjgiptcxrgmsw; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563789291.66-24509219511881/AnsiballZ_setup.py
+Jul 22 05:54:51 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:54:52 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:54:52 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-tsjxvtzjmazwhukceqawjnkzrrcoqwen; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563789292.47-9349911837738/AnsiballZ_yum.py
+Jul 22 05:54:52 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:54:54 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:54:55 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-rlzyuonbbxxrwbmzzbpomczunuinnjbe; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563789294.63-77414030424018/AnsiballZ_systemd.py
+Jul 22 05:54:55 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 05:54:55 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 05:55:55 jegui sshd[12253]: Received disconnect from 172.25.250.254 port 42816:11: disconnected by user
+Jul 22 05:55:55 jegui sshd[12253]: Disconnected from 172.25.250.254 port 42816
+Jul 22 05:55:55 jegui sshd[12250]: pam_unix(sshd:session): session closed for user devops
+Jul 22 06:03:05 jegui sshd[12796]: Accepted publickey for devops from 172.25.250.254 port 42822 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 22 06:03:06 jegui sshd[12796]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 22 06:03:06 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-tnifdgkwenwtwlfbnqdyzabtqsldqwna; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563789785.64-255375754819432/AnsiballZ_setup.py
+Jul 22 06:03:06 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 06:03:07 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 06:03:07 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-zwmoaucspiphbwqwadzhbnovzergnlfr; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563789787.3-268717672660501/AnsiballZ_firewalld.py
+Jul 22 06:03:07 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 06:03:08 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 06:03:08 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ortssxyzkaxwfxftumsseeljxzaezkmv; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563789788.6-129385017153190/AnsiballZ_setup.py
+Jul 22 06:03:08 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 06:03:09 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 06:03:09 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-cekgtjskwdhyfbqivelshrbumxcbihqh; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563789789.46-170749199748652/AnsiballZ_yum.py
+Jul 22 06:03:09 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 06:03:10 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 06:03:11 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-qkuzuiabojpmcmewdzwoabvbmktotekh; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563789791.09-74580194366618/AnsiballZ_systemd.py
+Jul 22 06:03:11 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 06:03:11 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 06:04:11 jegui sshd[12799]: Received disconnect from 172.25.250.254 port 42822:11: disconnected by user
+Jul 22 06:04:11 jegui sshd[12799]: Disconnected from 172.25.250.254 port 42822
+Jul 22 06:04:11 jegui sshd[12796]: pam_unix(sshd:session): session closed for user devops
+Jul 22 06:08:27 jegui sshd[13320]: Accepted publickey for devops from 172.25.250.254 port 42828 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 22 06:08:27 jegui sshd[13320]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 22 06:08:28 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-dbosddgvjkamejgohpozmhygebfvyyml; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563790107.06-219415216822448/AnsiballZ_setup.py
+Jul 22 06:08:28 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 06:08:28 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 06:08:29 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-tbhnfhjervjlyijmrnrvedfzceqeiorv; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563790108.81-77765473261684/AnsiballZ_firewalld.py
+Jul 22 06:08:29 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 06:08:29 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 06:08:30 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-xwdoqrsjjflppuooenxrfzhyjelaidql; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563790109.85-16260183696769/AnsiballZ_setup.py
+Jul 22 06:08:30 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 06:08:30 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 06:08:31 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-zergnjrqylvpbgedxbagmrrlabocksnr; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563790110.69-73920097182876/AnsiballZ_yum.py
+Jul 22 06:08:31 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 06:08:32 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 06:08:32 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ztymffdpziurkwnnpjazhuayntpbhwry; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563790112.5-173248062655271/AnsiballZ_systemd.py
+Jul 22 06:08:32 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 06:08:33 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 06:08:33 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ujdxjkytzfzahcngafyklojmvaukplfw; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563790113.29-213188114634144/AnsiballZ_systemd.py
+Jul 22 06:08:33 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 06:08:33 jegui polkitd[2566]: Registered Authentication Agent for unix-process:13923:2336338 (system bus name :1.305 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Jul 22 06:08:33 jegui polkitd[2566]: Unregistered Authentication Agent for unix-process:13923:2336338 (system bus name :1.305, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+Jul 22 06:08:33 jegui polkitd[2566]: Registered Authentication Agent for unix-process:13943:2336355 (system bus name :1.306 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+Jul 22 06:08:40 jegui polkitd[2566]: Unregistered Authentication Agent for unix-process:13943:2336355 (system bus name :1.306, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+Jul 22 06:08:40 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 06:08:41 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ohpeuxnaxmpeoollbavcjhjyrktadgxj; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563790120.87-180766584301960/AnsiballZ_stat.py
+Jul 22 06:08:41 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 06:08:41 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 06:08:41 jegui sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-qzluipeujowrwmsxaxmtszizjzowqvwd; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563790120.87-180766584301960/AnsiballZ_file.py
+Jul 22 06:08:41 jegui sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 22 06:08:41 jegui sudo: pam_unix(sudo:session): session closed for user root
+Jul 22 06:08:57 jegui sshd[14389]: Bad protocol version identification 'brain' from 172.25.250.254 port 42838
+Jul 22 06:08:57 jegui sshd[14390]: Accepted publickey for root from 172.25.250.254 port 42840 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 22 06:08:58 jegui sshd[14390]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Jul 22 06:08:58 jegui sshd[14390]: Received disconnect from 172.25.250.254 port 42840:11: disconnected by user
+Jul 22 06:08:58 jegui sshd[14390]: Disconnected from 172.25.250.254 port 42840
+Jul 22 06:08:58 jegui sshd[14390]: pam_unix(sshd:session): session closed for user root
+Jul 22 06:08:58 jegui sshd[14400]: Accepted publickey for root from 172.25.250.254 port 42842 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 22 06:08:58 jegui sshd[14400]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Jul 22 06:08:58 jegui sshd[14400]: Received disconnect from 172.25.250.254 port 42842:11: disconnected by user
+Jul 22 06:08:58 jegui sshd[14400]: Disconnected from 172.25.250.254 port 42842
+Jul 22 06:08:58 jegui sshd[14400]: pam_unix(sshd:session): session closed for user root
+Jul 22 06:08:58 jegui sshd[14411]: Accepted publickey for root from 172.25.250.254 port 42844 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 22 06:08:58 jegui sshd[14411]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Jul 22 06:08:59 jegui sshd[14411]: Received disconnect from 172.25.250.254 port 42844:11: disconnected by user
+Jul 22 06:08:59 jegui sshd[14411]: Disconnected from 172.25.250.254 port 42844
+Jul 22 06:08:59 jegui sshd[14411]: pam_unix(sshd:session): session closed for user root
+Jul 22 06:08:59 jegui sshd[14422]: Accepted publickey for root from 172.25.250.254 port 42846 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 22 06:08:59 jegui sshd[14422]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Jul 22 06:08:59 jegui sshd[14422]: Received disconnect from 172.25.250.254 port 42846:11: disconnected by user
+Jul 22 06:08:59 jegui sshd[14422]: Disconnected from 172.25.250.254 port 42846
+Jul 22 06:08:59 jegui sshd[14422]: pam_unix(sshd:session): session closed for user root
+Jul 22 06:08:59 jegui sshd[14433]: Accepted publickey for root from 172.25.250.254 port 42848 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 22 06:08:59 jegui sshd[14433]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Jul 22 06:08:59 jegui sshd[14433]: Received disconnect from 172.25.250.254 port 42848:11: disconnected by user
+Jul 22 06:08:59 jegui sshd[14433]: Disconnected from 172.25.250.254 port 42848
+Jul 22 06:08:59 jegui sshd[14433]: pam_unix(sshd:session): session closed for user root
+Jul 22 06:09:00 jegui sshd[14444]: Accepted publickey for root from 172.25.250.254 port 42850 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 22 06:09:00 jegui sshd[14444]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Jul 22 06:09:00 jegui sshd[14444]: Received disconnect from 172.25.250.254 port 42850:11: disconnected by user
+Jul 22 06:09:00 jegui sshd[14444]: Disconnected from 172.25.250.254 port 42850
+Jul 22 06:09:00 jegui sshd[14444]: pam_unix(sshd:session): session closed for user root
+Jul 22 06:09:00 jegui sshd[14457]: Accepted publickey for root from 172.25.250.254 port 42852 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 22 06:09:00 jegui sshd[14457]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Jul 22 06:09:00 jegui sshd[14457]: Received disconnect from 172.25.250.254 port 42852:11: disconnected by user
+Jul 22 06:09:00 jegui sshd[14457]: Disconnected from 172.25.250.254 port 42852
+Jul 22 06:09:00 jegui sshd[14457]: pam_unix(sshd:session): session closed for user root
+Jul 22 06:09:00 jegui sshd[14470]: Accepted publickey for root from 172.25.250.254 port 42854 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 22 06:09:01 jegui sshd[14470]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Jul 22 06:09:01 jegui sshd[14470]: Received disconnect from 172.25.250.254 port 42854:11: disconnected by user
+Jul 22 06:09:01 jegui sshd[14470]: Disconnected from 172.25.250.254 port 42854
+Jul 22 06:09:01 jegui sshd[14470]: pam_unix(sshd:session): session closed for user root
+Jul 22 06:09:01 jegui sshd[14483]: Accepted publickey for root from 172.25.250.254 port 42856 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 22 06:09:01 jegui sshd[14483]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Jul 22 06:09:01 jegui sshd[14483]: Received disconnect from 172.25.250.254 port 42856:11: disconnected by user
+Jul 22 06:09:01 jegui sshd[14483]: Disconnected from 172.25.250.254 port 42856
+Jul 22 06:09:01 jegui sshd[14483]: pam_unix(sshd:session): session closed for user root
+Jul 23 09:04:05 serverb polkitd[2551]: Loading rules from directory /etc/polkit-1/rules.d
+Jul 23 09:04:05 serverb polkitd[2551]: Loading rules from directory /usr/share/polkit-1/rules.d
+Jul 23 09:04:05 serverb polkitd[2551]: Finished loading, compiling and executing 2 rules
+Jul 23 09:04:05 serverb polkitd[2551]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Jul 23 09:04:25 serverb sshd[3108]: Server listening on 0.0.0.0 port 22.
+Jul 23 09:04:25 serverb sshd[3108]: Server listening on :: port 22.
+Jul 23 10:15:22 serverb sshd[4857]: Accepted publickey for devops from 172.25.250.254 port 51360 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 23 10:15:22 serverb sshd[4857]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 23 10:16:48 serverb sshd[4860]: Received disconnect from 172.25.250.254 port 51360:11: disconnected by user
+Jul 23 10:16:48 serverb sshd[4860]: Disconnected from 172.25.250.254 port 51360
+Jul 23 10:16:48 serverb sshd[4857]: pam_unix(sshd:session): session closed for user devops
+Jul 23 10:17:17 serverb sshd[5082]: Accepted publickey for devops from 172.25.250.254 port 51366 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 23 10:17:17 serverb sshd[5082]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 23 10:18:18 serverb sshd[5085]: Received disconnect from 172.25.250.254 port 51366:11: disconnected by user
+Jul 23 10:18:18 serverb sshd[5085]: Disconnected from 172.25.250.254 port 51366
+Jul 23 10:18:18 serverb sshd[5082]: pam_unix(sshd:session): session closed for user devops
+Jul 23 10:18:56 serverb sshd[5197]: Accepted publickey for devops from 172.25.250.254 port 51370 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 23 10:18:56 serverb sshd[5197]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 23 10:20:44 serverb sshd[5200]: Received disconnect from 172.25.250.254 port 51370:11: disconnected by user
+Jul 23 10:20:44 serverb sshd[5200]: Disconnected from 172.25.250.254 port 51370
+Jul 23 10:20:44 serverb sshd[5197]: pam_unix(sshd:session): session closed for user devops
+Jul 23 10:24:24 serverb sshd[5537]: Accepted publickey for devops from 172.25.250.254 port 51374 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 23 10:24:24 serverb sshd[5537]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 23 10:26:52 serverb sshd[5540]: Received disconnect from 172.25.250.254 port 51374:11: disconnected by user
+Jul 23 10:26:52 serverb sshd[5540]: Disconnected from 172.25.250.254 port 51374
+Jul 23 10:26:52 serverb sshd[5537]: pam_unix(sshd:session): session closed for user devops
+Jul 24 08:59:56 serverb polkitd[2575]: Loading rules from directory /etc/polkit-1/rules.d
+Jul 24 08:59:56 serverb polkitd[2575]: Loading rules from directory /usr/share/polkit-1/rules.d
+Jul 24 08:59:56 serverb polkitd[2575]: Finished loading, compiling and executing 2 rules
+Jul 24 08:59:56 serverb polkitd[2575]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Jul 24 09:00:16 serverb sshd[3116]: Server listening on 0.0.0.0 port 22.
+Jul 24 09:00:16 serverb sshd[3116]: Server listening on :: port 22.
+Jul 24 09:23:36 serverb polkitd[2579]: Loading rules from directory /etc/polkit-1/rules.d
+Jul 24 09:23:36 serverb polkitd[2579]: Loading rules from directory /usr/share/polkit-1/rules.d
+Jul 24 09:23:36 serverb polkitd[2579]: Finished loading, compiling and executing 2 rules
+Jul 24 09:23:36 serverb polkitd[2579]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Jul 24 09:23:55 serverb sshd[3113]: Server listening on 0.0.0.0 port 22.
+Jul 24 09:23:55 serverb sshd[3113]: Server listening on :: port 22.
+Jul 24 09:52:50 serverb polkitd[2575]: Loading rules from directory /etc/polkit-1/rules.d
+Jul 24 09:52:50 serverb polkitd[2575]: Loading rules from directory /usr/share/polkit-1/rules.d
+Jul 24 09:52:50 serverb polkitd[2575]: Finished loading, compiling and executing 2 rules
+Jul 24 09:52:50 serverb polkitd[2575]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Jul 24 09:53:11 serverb sshd[3112]: Server listening on 0.0.0.0 port 22.
+Jul 24 09:53:11 serverb sshd[3112]: Server listening on :: port 22.
+Jul 24 09:59:44 serverb sshd[3522]: Accepted publickey for devops from 172.25.250.254 port 57842 ssh2: RSA SHA256:M8ikhcEDm2tQ95Z0o7ZvufqEixCFCt+wowZLNzNlBT0
+Jul 24 09:59:45 serverb sshd[3522]: pam_unix(sshd:session): session opened for user devops by (uid=0)
+Jul 24 09:59:45 serverb sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ordyzglatomcllldnjjwggvmoyitapwv; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563933584.54-275232633481079/AnsiballZ_setup.py
+Jul 24 09:59:46 serverb sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 24 09:59:46 serverb sudo: pam_unix(sudo:session): session closed for user root
+Jul 24 09:59:47 serverb sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-ympmetxfxhcotbkkfjncuzswphbsdood; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563933586.76-107146369172505/AnsiballZ_slurp.py
+Jul 24 09:59:47 serverb sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 24 09:59:47 serverb sudo: pam_unix(sudo:session): session closed for user root
+Jul 24 10:00:28 serverb sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-iesljbczvfmleqyjxfjtpyuozsqjhkfq; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563933628.37-50677077977919/AnsiballZ_setup.py
+Jul 24 10:00:28 serverb sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)
+Jul 24 10:00:29 serverb sudo: pam_unix(sudo:session): session closed for user root
+Jul 24 10:00:29 serverb sudo:  devops : TTY=pts/0 ; PWD=/home/devops ; USER=root ; COMMAND=/bin/sh -c echo BECOME-SUCCESS-irdrybdsvlkgpasnragshwaxpdfjpsbp; /usr/bin/python /home/devops/.ansible/tmp/ansible-tmp-1563933629.52-128094256454639/AnsiballZ_slurp.py
+Jul 24 10:00:29 serverb sudo: pam_unix(sudo:session): session opened for user root by devops(uid=0)

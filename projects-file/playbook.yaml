@@ -1,0 +1,9 @@
+---
+- name: ssss
+  hosts: all
+  vars:
+    package: httpd
+    service: httpd
+  tasks:
+    - import_tasks: "{{ dd }}"
+

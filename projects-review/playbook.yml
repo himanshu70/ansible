@@ -1,0 +1,17 @@
+---
+- name: Install and configure web service
+  hosts:
+    - 'server*'
+  serial: 2
+  tasks:
+    - name: Tuning configuration installed
+      import_tasks: tasks/web_tasks.yml
+
+    - name: file wall
+      import_tasks: tasks/firewall_tasks.yml
+
+  handlers:
+    - name: restart httpd
+      service:
+        name: httpd
+        state: restarted

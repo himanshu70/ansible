@@ -1,0 +1,13 @@
+---
+- name: use template
+  hosts: all
+  become: true
+  vars:
+    system_owner: himanshu@axa.com
+  tasks: 
+    - template:
+        src: files/motd.j2
+        dest: /tmp/motd
+        owner: root
+        group: root
+        mode: 0644

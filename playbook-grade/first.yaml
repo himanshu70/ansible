@@ -1,0 +1,44 @@
+---
+- name: First Play
+  hosts: webserver
+  tasks:
+    - name: intall and open firewall
+      firewalld:
+          service: http
+          state: enabled
+          permanent: true
+          immediate: true 
+
+- name: setup website
+  hosts: webserver
+  tasks:
+    - name: install httpd
+      yum:
+          name: 
+            - httpd
+            - php
+            - php-mysql
+            - mariadb-server
+          state: latest
+    - name: enable and start service
+      service: 
+          name: httpd
+          state: started
+          enabled: true
+    - name: dd
+      service: 
+          name: mariadb
+          state: started
+          enabled: true
+    - name: copy site
+      copy:
+          src: site/index.html
+          dest: /var/www/html/index.html
+- name: Test server
+  hosts: localhost
+  tasks: 
+    - name: test application
+      uri: 
+        url: http://servera.lab.example.com
+        status_code: 200
+        limit: 3

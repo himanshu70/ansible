@@ -1,0 +1,14 @@
+---
+- name: seure file type change
+  hosts: all
+  become: true
+  tasks:
+    - name: copy file
+      copy:
+        src: files/users.txt
+        dest: /tmp/users.txt
+    - name: change file type
+      file:
+        path: /tmp/users.txt
+        seuser: _default
+        setype: _default
