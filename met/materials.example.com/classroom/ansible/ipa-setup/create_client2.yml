@@ -1,0 +1,53 @@
+# create_client2.yml
+# Artur Glogowski <aglogows@redhat.com>
+# Steve Bonneville <sbonnevi@redhat.com>
+
+- hosts: all
+
+  vars:
+    ipa_server: utility.lab.example.com
+    ipa_domain: lab.example.com
+    ipa_realm: LAB.EXAMPLE.COM
+    ipa_otp_password: hippo
+    ipa_admin_password: redhat321
+    ipa_client_packages: 
+      - freeipa-client
+      - ipa-admintools
+
+  tasks:
+
+    - name: FreeIPA client packages installed
+      package:
+        name: "{{ item }}"
+        state: latest
+      with_items: "{{ ipa_client_packages }}"
+
+    - name: Get Kerberos credentials as IPA superuser "admin"
+      shell: echo {{ ipa_admin_password }} | kinit -f admin
+      changed_when: false
+
+    - name: Host is unregistered from development hostgroup
+      command: ipa hostgroup-remove-member --hosts={{ ansible_fqdn }} development
+      when: ansible_fqdn == 'servera.lab.example.com' or ansible_fqdn == 'serverb.lab.example.com'
+      ignore_errors: true
+
+    - name: Host is unregistered from production hostgroup
+      command: ipa hostgroup-remove-member --hosts={{ ansible_fqdn }} production
+      when: ansible_fqdn == 'servere.lab.example.com' or ansible_fqdn == 'serverf.lab.example.com' 
+      ignore_errors: true
+
+    - name: Host is registered to development hostgroup
+      command: ipa hostgroup-add-member --hosts={{ ansible_fqdn }} development
+      when: ansible_fqdn == 'servere.lab.example.com' or ansible_fqdn == 'serverf.lab.example.com'
+      ignore_errors: true
+
+    - name: Host is registered to testing hostgroup
+      command: ipa hostgroup-add-member --hosts={{ ansible_fqdn }} testing
+      when: ansible_fqdn == 'serverc.lab.example.com' or ansible_fqdn == 'serverd.lab.example.com'
+      ignore_errors: true
+
+    - name: Host is registered to production hostgroup
+      command: ipa hostgroup-add-member --hosts={{ ansible_fqdn }} production
+      when: ansible_fqdn == 'servera.lab.example.com' or ansible_fqdn == 'serverb.lab.example.com' 
+      ignore_errors: true
+

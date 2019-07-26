@@ -1,0 +1,10 @@
+- inventory_source: 6
+  success_nodes:
+  - project: My Full-Stack Project
+    success_nodes:
+    - job_template: Setup Databases
+      success_nodes:
+      - job_template: Setup Webservers
+        success_nodes:
+        - job_template: Setup Load Balancer
+

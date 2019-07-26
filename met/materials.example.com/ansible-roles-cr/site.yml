@@ -1,0 +1,7 @@
+
+ # Play for FTP clients
+ - include: ftpclient.yml
+
+ # Play for FTP servers
+ - include: vsftpd-configure.yml
+

@@ -1,0 +1,477 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script type="text/javascript" src="https://www.redhat.com/dtm.js"></script>
+  <meta class="swiftype" name="published_at" data-type="date" content="2017-12-13" />
+  <meta class="swiftype" name="version" data-type="string" content="3.2.2">
+
+  <!-- Google Tag Manager Data Layer -->
+  <script>
+    dataLayer = [];
+  </script>
+  <!-- End Google Tag Manager Data Layer -->
+
+  
+  <title>Rules &mdash; Ansible Documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet'
+    type='text/css'>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+  
+  
+
+  <script type="text/javascript">
+    var DOCUMENTATION_OPTIONS = {
+      URL_ROOT: '../',
+      VERSION: '2.6',
+      COLLAPSE_INDEX: false,
+      FILE_SUFFIX: '.html',
+      HAS_SOURCE: false
+      };
+  </script>
+  <script type="text/javascript" src="../_static/jquery.js"></script>
+  <script type="text/javascript" src="../_static/underscore.js"></script>
+  <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+  <link rel="search" type="application/opensearchdescription+xml" title="Search within Ansible Documentation"
+    href="../_static/opensearch.xml" />
+  
+
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+  <link rel="index" title="Index" href="../genindex.html" />
+  <link rel="search" title="Search" href="../search.html" />
+  <link rel="next" title="Default Rules" href="default_rules.html" />
+  <link rel="prev" title="&lt;no title&gt;" href="index.html" /> 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <!-- Google Tag Manager -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSB293" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-PSB293');</script>
+  <!-- End Google Tag Manager -->
+
+  <div class="DocSite-globalNav ansibleNav">
+    <ul>
+      <li><a href="https://www.ansible.com/ansiblefest" target="_blank">AnsibleFest</a></li>
+      <li><a href="https://www.ansible.com/tower" target="_blank">Products</a></li>
+      <li><a href="https://www.ansible.com/community" target="_blank">Community</a></li>
+      <li><a href="https://www.ansible.com/webinars-training" target="_blank">Webinars & Training</a></li>
+      <li><a href="https://www.ansible.com/blog" target="_blank">Blog</a></li>
+    </ul>
+  </div>
+
+  <a class="DocSite-nav" href="../../index.html" style="padding-bottom: 30px;">
+
+    <img class="DocSiteNav-logo" src="../_static/images/logo_invert.png" alt="Ansible Logo">
+    <div class="DocSiteNav-title">Documentation</div>
+  </a>
+
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          <div style="background-color:#5bbdbf;height=80px;margin:'auto auto auto auto'">
+            <a class="DocSiteProduct-header DocSiteProduct-header--core" href="../index.html">
+              <div class="DocSiteProduct-productName">
+                <div class="DocSiteProduct-logoText">
+                  Ansible Lint
+                  <!--div class="DocSiteProduct-CurrentVersion" align="right">
+                      devel
+                  </div-->
+                </div>
+              </div>
+            </a>
+
+            <!--div class="DocSiteProduct-CheckVersionPara">For previous versions, see the  <a class="DocSiteProduct-versionheader" href="/#coreversionselect">documentation archive.</a></div-->
+          </div>
+
+          <div class="wy-side-nav-search" style="background-color#5bbdbf;height=80px;margin:'auto auto auto auto'">
+            <!-- <a href="../index.html" class="icon icon-home"> Ansible Documentation</a> -->
+            
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+          </div>
+
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+          
+          
+          
+          
+          
+          <p class="caption"><span class="caption-text">Installing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../installing/installing.html">Installing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../installing/installing.html#using-pip">Using Pip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installing/installing.html#from-source">From Source</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Configuring</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../configuring/configuring.html">Configuring</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../configuring/configuring.html#configuration-file">Configuration File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuring/configuring.html#pre-commit">Pre-commit</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../usage/usage.html">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../usage/usage.html#command-line-options">Command Line Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../usage/usage.html#linting-playbooks-and-roles">Linting Playbooks and Roles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../usage/usage.html#examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Rules</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="rules.html#">Rules</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rules.html#specifying-rules-at-runtime">Specifying Rules at Runtime</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="rules.html#using-tags-to-include-rules">Using Tags to Include Rules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rules.html#excluding-rules">Excluding Rules</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="rules.html#false-positives-muting-ansible-lint-warnings">False Positives: Muting Ansible Lint Warnings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rules.html#creating-custom-rules">Creating Custom Rules</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="default_rules.html">Default Rules</a></li>
+</ul>
+
+          
+          
+        </div>
+        <!-- changeable widget -->
+        <div id="sideBanner">
+          <br />
+          <a href="https://www.ansible.com/docs-left?utm_source=docs">
+            <img style="border-width:0px;" src="https://cdn2.hubspot.net/hubfs/330046/docs-graphics/ASB-docs-left-rail.png" />
+          </a>
+        </div>
+
+
+      </div>
+      &nbsp;
+    </nav>
+  </div>
+
+
+  <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+    
+    <nav class="wy-nav-top" aria-label="top navigation">
+      
+      <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+      <a href="../index.html">Ansible Documentation</a>
+      
+    </nav>
+
+
+    
+    <div class="wy-nav-content">
+      <div class="rst-content">
+
+        <!-- Banner ads
+          <div class="DocSiteBanner">
+            <a class="DocSiteBanner-imgWrapper"
+                href="https://www.ansible.com/docs-top?utm_source=docs">
+                <img src="https://cdn2.hubspot.net/hubfs/330046/docs-graphics/ASB-docs-top-left.png">
+            </a>
+            <a class="DocSiteBanner-imgWrapper"
+                href="https://www.ansible.com/docs-top?utm_source=docs">
+                <img src="https://cdn2.hubspot.net/hubfs/330046/docs-graphics/ASB-docs-top-right.png">
+            </a>
+        </div> -->
+
+        <ul class="wy-breadcrumbs">
+  <li><a href="../index.html">Docs</a> &raquo;</li>
+  <li><a href="rules.html">Rules</a></li>
+  
+  <li class="wy-breadcrumbs-aside">
+    <a href="https://github.com/ansible/ansible-lint/edit/master/docs/docsite/rst/rules/rules.rst?description=%3C!---%20Your%20description%20here%20--%3E%0A%0A%2Blabel:%20docsite_pr"
+      class="icon icon-github"> Edit on GitHub</a>
+  </li>
+  
+</ul>
+<hr />
+        <div id="page-content">
+          
+  <div class="section" id="rules">
+<span id="lint-rules"></span><h1><a class="toc-backref" href="rules.html#id1">Rules</a><a class="headerlink" href="rules.html#rules" title="Permalink to this headline">¶</a></h1>
+<div class="contents topic" id="topics">
+<p class="topic-title first">Topics</p>
+<ul class="simple">
+<li><a class="reference internal" href="rules.html#rules" id="id1">Rules</a><ul>
+<li><a class="reference internal" href="rules.html#specifying-rules-at-runtime" id="id2">Specifying Rules at Runtime</a><ul>
+<li><a class="reference internal" href="rules.html#using-tags-to-include-rules" id="id3">Using Tags to Include Rules</a></li>
+<li><a class="reference internal" href="rules.html#excluding-rules" id="id4">Excluding Rules</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="rules.html#false-positives-muting-ansible-lint-warnings" id="id5">False Positives: Muting Ansible Lint Warnings</a></li>
+<li><a class="reference internal" href="rules.html#creating-custom-rules" id="id6">Creating Custom Rules</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>This topic describes how to use the deault Ansible Lint rules, as well as how to create and use custom rules.</p>
+<div class="section" id="specifying-rules-at-runtime">
+<h2><a class="toc-backref" href="rules.html#id2">Specifying Rules at Runtime</a><a class="headerlink" href="rules.html#specifying-rules-at-runtime" title="Permalink to this headline">¶</a></h2>
+<p>By default, <code class="docutils literal"><span class="pre">ansible-lint</span></code> uses the rules found in <code class="docutils literal"><span class="pre">ansible-lint/lib/ansiblelint/rules</span></code>. To override this behavior and use a custom set of rules, use the <code class="docutils literal"><span class="pre">-r</span> <span class="pre">/path/to/custom-rules</span></code> option to provide a directory path containing the custom rules. For multiple rule sets, pass multiple <code class="docutils literal"><span class="pre">-r</span></code> options.</p>
+<p>It&#8217;s also possilbe to use the default rules, plus custom rules. This can be done by passing the <code class="docutils literal"><span class="pre">-R</span></code> to indicate that the deault rules are to be used, along with one or more <code class="docutils literal"><span class="pre">-r</span></code> options.</p>
+<div class="section" id="using-tags-to-include-rules">
+<h3><a class="toc-backref" href="rules.html#id3">Using Tags to Include Rules</a><a class="headerlink" href="rules.html#using-tags-to-include-rules" title="Permalink to this headline">¶</a></h3>
+<p>Each rule has an associated set of one or more tags. To view the list of tags for each available rule, use the <code class="docutils literal"><span class="pre">-T</span></code> option.</p>
+<p>The following shows the available tags in an example set of rules, and the rules associated with each tag:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ ansible-lint -v -T
+
+behaviour <span class="o">[</span><span class="s1">&#39;[ANSIBLE0016]&#39;</span><span class="o">]</span>
+bug <span class="o">[</span><span class="s1">&#39;[ANSIBLE0014]&#39;</span><span class="o">]</span>
+deprecated <span class="o">[</span><span class="s1">&#39;[ANSIBLE0015]&#39;</span>, <span class="s1">&#39;[ANSIBLE0008]&#39;</span>, <span class="s1">&#39;[ANSIBLE0018]&#39;</span>, <span class="s1">&#39;[ANSIBLE0019]&#39;</span><span class="o">]</span>
+formatting <span class="o">[</span><span class="s1">&#39;[ANSIBLE0015]&#39;</span>, <span class="s1">&#39;[ANSIBLE0002]&#39;</span>, <span class="s1">&#39;[ANSIBLE0009]&#39;</span><span class="o">]</span>
+idempotency <span class="o">[</span><span class="s1">&#39;[ANSIBLE0012]&#39;</span><span class="o">]</span>
+oddity <span class="o">[</span><span class="s1">&#39;[ANSIBLE0017]&#39;</span><span class="o">]</span>
+readability <span class="o">[</span><span class="s1">&#39;[ANSIBLE0011]&#39;</span><span class="o">]</span>
+repeatability <span class="o">[</span><span class="s1">&#39;[ANSIBLE0004]&#39;</span>, <span class="s1">&#39;[ANSIBLE0010]&#39;</span>, <span class="s1">&#39;[ANSIBLE0005]&#39;</span><span class="o">]</span>
+resources <span class="o">[</span><span class="s1">&#39;[ANSIBLE0007]&#39;</span>, <span class="s1">&#39;[ANSIBLE0006]&#39;</span><span class="o">]</span>
+safety <span class="o">[</span><span class="s1">&#39;[ANSIBLE0013]&#39;</span><span class="o">]</span>
+</pre></div>
+</div>
+<p>To run just the <em>idempotency</em> rules, for example, run the following:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ ansible-lint -t idempotency playbook.yml
+</pre></div>
+</div>
+</div>
+<div class="section" id="excluding-rules">
+<h3><a class="toc-backref" href="rules.html#id4">Excluding Rules</a><a class="headerlink" href="rules.html#excluding-rules" title="Permalink to this headline">¶</a></h3>
+<p>To exclude rules from the available set of rules, use the <code class="docutils literal"><span class="pre">-x</span> <span class="pre">SKIP_LIST</span></code> option. For example, the following runs all of the rules except those with the tags <em>readability</em> and <em>safety</em>:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ ansible-lint -x readability,safety playbook.yml
+</pre></div>
+</div>
+<p>It&#8217;s also possible to skip specific rules by passing the rule ID. For example, the following excludes rule <em>ANSIBLE0011</em>:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ ansible-lint -x ANSIBLE0011 playbook.yml
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="false-positives-muting-ansible-lint-warnings">
+<h2><a class="toc-backref" href="rules.html#id5">False Positives: Muting Ansible Lint Warnings</a><a class="headerlink" href="rules.html#false-positives-muting-ansible-lint-warnings" title="Permalink to this headline">¶</a></h2>
+<p>Some rules are a bit of a rule of thumb. Advanced <em>git</em>, <em>yum</em> or <em>apt</em> usage, for example, is typically difficult to achieve through the modules. In this case, you should mark the task so that warnings aren&#8217;t produced.</p>
+<p>There are two mechanisms for this - one works with all tasks, the other works with the command checking modules.</p>
+<p>Use the <code class="docutils literal"><span class="pre">warn</span></code> parameter with the <em>command</em> or <em>shell</em> module.</p>
+<p>Use <code class="docutils literal"><span class="pre">skip_ansible_lint</span></code> tag with any task that should be skipped.</p>
+<p>It&#8217;s also a good practice to comment the reasons why a task is being skipped.</p>
+<p>Here&#8217;s an example playbook showing the two techniques for muting Ansible Lint warnings:</p>
+<div class="highlight-yaml"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">this would typically fire CommandsInsteadOfArgumentRule</span>
+  <span class="l l-Scalar l-Scalar-Plain">command</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">warn=no chmod 644 X</span>
+
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">this would typically fire CommandsInsteadOfModuleRule</span>
+  <span class="l l-Scalar l-Scalar-Plain">command</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">git pull --rebase</span>
+  <span class="l l-Scalar l-Scalar-Plain">args</span><span class="p p-Indicator">:</span>
+    <span class="l l-Scalar l-Scalar-Plain">warn</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">False</span>
+
+<span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">this would typically fire GitHasVersionRule</span>
+  <span class="l l-Scalar l-Scalar-Plain">git</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">src=/path/to/git/repo dest=checkout</span>
+  <span class="l l-Scalar l-Scalar-Plain">tags</span><span class="p p-Indicator">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">skip_ansible_lint</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="creating-custom-rules">
+<h2><a class="toc-backref" href="rules.html#id6">Creating Custom Rules</a><a class="headerlink" href="rules.html#creating-custom-rules" title="Permalink to this headline">¶</a></h2>
+<p>Rules are described using a class file per rule. Default rules are named <em>DeprecatedVariableRule.py</em>, etc.</p>
+<p>Each rule definition should have the following:</p>
+<ul class="simple">
+<li>ID: A unique identifier</li>
+<li>Short description: Brief description of the rule</li>
+<li>Description: Behaviour the rule is looking for</li>
+<li>Tags: one or more tags that may be used to include or exclude the rule</li>
+<li>At least one of the following methods:<ul>
+<li><code class="docutils literal"><span class="pre">match</span></code> that takes a line and returns None or False, if the line doesn&#8217;t match the test, and True or a custom message, when it does. (This allows one rule to test multiple behaviours - see e.g. the <em>CommandsInsteadOfModulesRule</em>.)</li>
+<li><code class="docutils literal"><span class="pre">matchtask</span></code> that operates on a single task or handler, such that tasks get standardized to always contain a <em>module</em> key and <em>module_arguments</em> key. Other common task modifiers, such as <em>when</em>, <em>with_items</em>, etc., are also available as keys, if present in the task.</li>
+</ul>
+</li>
+</ul>
+<p>An example rule using <code class="docutils literal"><span class="pre">match</span></code> is:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ansiblelint</span> <span class="kn">import</span> <span class="n">AnsibleLintRule</span>
+
+<span class="k">class</span> <span class="nc">DeprecatedVariableRule</span><span class="p">(</span><span class="n">AnsibleLintRule</span><span class="p">):</span>
+
+    <span class="nb">id</span> <span class="o">=</span> <span class="s1">&#39;ANSIBLE0001&#39;</span>
+    <span class="n">shortdesc</span> <span class="o">=</span> <span class="s1">&#39;Deprecated variable declarations&#39;</span>
+    <span class="n">description</span> <span class="o">=</span> <span class="s1">&#39;Check for lines that have old style ${var} &#39;</span> <span class="o">+</span> \
+                  <span class="s1">&#39;declarations&#39;</span>
+    <span class="n">tags</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">&#39;deprecated&#39;</span> <span class="p">}</span>
+
+    <span class="k">def</span> <span class="nf">match</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">file</span><span class="p">,</span> <span class="n">line</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;${&#39;</span> <span class="ow">in</span> <span class="n">line</span>
+</pre></div>
+</div>
+<p>An example rule using <code class="docutils literal"><span class="pre">matchtask</span></code> is:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">ansiblelint.utils</span>
+<span class="kn">from</span> <span class="nn">ansiblelint</span> <span class="kn">import</span> <span class="n">AnsibleLintRule</span>
+
+<span class="k">class</span> <span class="nc">TaskHasTag</span><span class="p">(</span><span class="n">AnsibleLintRule</span><span class="p">):</span>
+    <span class="nb">id</span> <span class="o">=</span> <span class="s1">&#39;ANSIBLE0008&#39;</span>
+    <span class="n">shortdesc</span> <span class="o">=</span> <span class="s1">&#39;Tasks must have tag&#39;</span>
+    <span class="n">description</span> <span class="o">=</span> <span class="s1">&#39;Tasks must have tag&#39;</span>
+    <span class="n">tags</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;productivity&#39;</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="nf">matchtask</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">file</span><span class="p">,</span> <span class="n">task</span><span class="p">):</span>
+        <span class="c1"># If the task include another task or make the playbook fail</span>
+        <span class="c1"># Don&#39;t force to have a tag</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">set</span><span class="p">(</span><span class="n">task</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span><span class="o">.</span><span class="n">isdisjoint</span><span class="p">([</span><span class="s1">&#39;include&#39;</span><span class="p">,</span><span class="s1">&#39;fail&#39;</span><span class="p">]):</span>
+            <span class="k">return</span> <span class="bp">False</span>
+
+        <span class="c1"># Task should have tags</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">task</span><span class="o">.</span><span class="n">has_key</span><span class="p">(</span><span class="s1">&#39;tags&#39;</span><span class="p">):</span>
+              <span class="k">return</span> <span class="bp">True</span>
+
+    <span class="k">return</span> <span class="bp">False</span>
+</pre></div>
+</div>
+<p>The task argument to <code class="docutils literal"><span class="pre">matchtask</span></code> contains a number of keys - the critical one is <em>action</em>. The value of <em>task[&#8216;action&#8217;]</em> contains the module being used, and the arguments passed, both as key-value pairs and a list of other arguments (e.g. the command used with shell).</p>
+<p>In ansible-lint 2.0.0, <em>task[&#8216;action&#8217;][&#8216;args&#8217;]</em> was renamed <em>task[&#8216;action&#8217;][&#8216;module_arguments&#8217;]</em> to avoid a clash when a module actually takes args as a parameter key (e.g. ec2_tag)</p>
+<p>In ansible-lint 3.0.0 <em>task[&#8216;action&#8217;][&#8216;module&#8217;]</em> was renamed <em>task[&#8216;action&#8217;][&#8216;__ansible_module__&#8217;]</em> to avoid a clash when a module take module as an argument. As a precaution, <em>task[&#8216;action&#8217;][&#8216;module_arguments&#8217;]</em> was renamed <em>task[&#8216;action&#8217;][&#8216;__ansible_arguments__&#8217;]</em>.</p>
+</div>
+</div>
+
+
+        </div>
+        <div id="search-results">
+          <gcse:searchresults-only>
+        </div>
+        <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="default_rules.html" class="btn btn-neutral float-right" title="Default Rules"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="&lt;no title&gt;"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','yABGvz2N8PwcwBxyfzUc','2.0.0');
+</script>
+
+  <p>Last updated on Dec 07, 2018.<br/>
+  Copyright © 2018 Red Hat, Inc. <br/>
+  </p>
+</footer>
+      </div>
+    </div>
+
+  </section>
+
+  </div>
+  
+
+
+  
+
+  <script type="text/javascript">
+    var DOCUMENTATION_OPTIONS = {
+      URL_ROOT: '../',
+      VERSION: '2.6',
+      LANGUAGE: 'None',
+      COLLAPSE_INDEX: false,
+      FILE_SUFFIX: '.html',
+      HAS_SOURCE: false,
+    SOURCELINK_SUFFIX: '.txt'
+        };
+  </script>
+  <script type="text/javascript" src="../_static/jquery.js"></script>
+  <script type="text/javascript" src="../_static/underscore.js"></script>
+  <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+    jQuery(function () {
+      
+      SphinxRtdTheme.Navigation.enableSticky();
+      
+    });
+  </script> 
+  <!-- begin analytics -->
+  <script type="text/javascript">
+    var _hsq = _hsq || [];
+    _hsq.push(["setContentType", "standard-page"]);
+    (function (d, s, i, r) {
+      if (d.getElementById(i)) { return; }
+      var n = d.createElement(s), e = document.getElementsByTagName(s)[0];
+      n.id = i; n.src = '//js.hs-analytics.net/analytics/' + (Math.ceil(new Date() / r) * r) + '/330046.js';
+      e.parentNode.insertBefore(n, e);
+    })(document, "script", "hs-analytics", 300000);
+  </script>
+  <!-- end analytics -->
+  <script type="text/javascript">
+    if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {
+      _satellite.pageBottom();
+    }
+  </script>
+</body>
+
+</html>

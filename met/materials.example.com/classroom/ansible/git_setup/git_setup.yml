@@ -1,0 +1,7 @@
+- hosts: git-servers
+  become: yes
+  roles:
+    - { role: git_server, git_project: my_webservers_DEV, git_authorized_keys: keys/student_key.pub }
+    - { role: git_server, git_project: my_webservers_TEST, git_authorized_keys: keys/student_key.pub }
+    - { role: git_server, git_project: my_webservers_PROD, git_authorized_keys: keys/student_key.pub }
+    - { role: git_server, git_project: inventory, git_authorized_keys: keys/student_key.pub }

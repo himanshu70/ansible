@@ -1,0 +1,8 @@
+---
+- name: ILT Restorecon Fix
+  hosts: database_servers
+  gather_facts: no
+  tasks:
+    - name: Restore SELinux context on /etc
+      command: restorecon -Rv /etc
+

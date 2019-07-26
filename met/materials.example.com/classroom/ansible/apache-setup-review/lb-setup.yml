@@ -1,0 +1,47 @@
+---
+- hosts: serverb.lab.example.com
+  name: Install HAProxy load balancer and start it
+  become: yes
+  tasks:
+    - name: Install HAProxy
+      package:
+        name: haproxy
+        state: installed
+
+    - name: Remove Apache http server
+      package:
+        name: httpd
+        state: absent
+
+    - name: Generate haproxy configuration file from jinja2 template
+      template:
+        src: templates/haproxy.cfg.j2
+        dest: /etc/haproxy/haproxy.cfg
+      notify: restart haproxy service
+
+    - name: Open the firewalld mariadb port
+      firewalld:
+        port: 80/tcp
+        permanent: true
+        state: enabled
+      notify: restart firewalld service
+
+    - name: Start HAProxy
+      service:
+        name: haproxy
+        state: started
+        enabled: yes
+  
+  handlers:
+
+    - name: restart firewalld service
+      service:
+        name: firewalld
+        state: restarted
+        enabled: yes
+
+    - name: restart haproxy service
+      service:
+        name: haproxy
+        state: restarted
+        enabled: yes

@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /playbooks/templates</title>
+ </head>
+ <body>
+<h1>Index of /playbooks/templates</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=A">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=D">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/playbooks/">Parent Directory</a>       </td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="index.html.j2">index.html.j2</a>          </td><td align="right">2019-01-10 17:35  </td><td align="right">114 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="serverc.lab.example.com-httpd.conf.j2">serverc.lab.example...&gt;</a></td><td align="right">2019-01-10 17:35  </td><td align="right">141 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="index-ver1.html.j2">index-ver1.html.j2</a>     </td><td align="right">2019-01-10 17:35  </td><td align="right">144 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="servera.lab.example.com-httpd.conf.j2">servera.lab.example...&gt;</a></td><td align="right">2019-01-10 17:35  </td><td align="right">294 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="smb.conf.j2">smb.conf.j2</a>            </td><td align="right">2019-01-10 17:35  </td><td align="right">435 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="main.cf.j2">main.cf.j2</a>             </td><td align="right">2019-01-10 17:35  </td><td align="right">854 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="squirrelmail-httpd-conf.j2">squirrelmail-httpd-c..&gt;</a></td><td align="right">2019-01-10 17:35  </td><td align="right">1.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="haproxy.cfg.j2">haproxy.cfg.j2</a>         </td><td align="right">2019-01-10 17:35  </td><td align="right">1.2K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="squirrelmail-config.php.j2">squirrelmail-config...&gt;</a></td><td align="right">2019-01-10 17:35  </td><td align="right"> 30K</td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+</body></html>

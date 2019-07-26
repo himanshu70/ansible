@@ -1,0 +1,20 @@
+---
+- hosts: servera.lab.example.com, serverb.lab.example.com, serverc.lab.example.com, serverd.lab.example.com, servere.lab.example.com, serverf.lab.example.com
+  name: Uninstall Apache, MariaDB and HAProxy
+  become: yes
+  tasks:
+    - name: Remove HAProxy
+      package:
+        name: haproxy
+        state: absent
+
+    - name: Remove Apache http server
+      package:
+        name: httpd
+        state: absent
+
+    - name: Remove MariaDB server
+      package:
+        name: mariadb-server
+        state: absent
+

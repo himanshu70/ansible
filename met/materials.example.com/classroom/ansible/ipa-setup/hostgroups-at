@@ -1,0 +1,3 @@
+echo "=== $(date) ===" >> /var/tmp/labs/hostgroups-at.log
+
+cd /root/ansible/ipa-setup &>> /var/tmp/labs/hostgroups-at.log && ansible-playbook create_ipa_server_hostgroups.yml --extra-vars "ansible_sudo_pass=student" &>> /var/tmp/labs/hostgroups-at.log

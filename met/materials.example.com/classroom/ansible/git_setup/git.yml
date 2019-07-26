@@ -1,0 +1,43 @@
+
+- hosts: all
+
+  become: yes
+
+  vars:
+    git_keys: 
+      - files/authorized_keys/sbonnevi.pub
+      - files/authorized_keys/foo.pub
+
+
+# Tasks run after roles by default.  You don't even need a tasks block,
+# uncomment this to see how that works.
+
+#  tasks:
+#    
+#    - name: See how tasks run after roles by default
+#      debug:
+
+  roles:
+
+    # Illustrating three different ways to set the git_authorized_keys variable
+    # to find the list of keys that should have access.  You could also set up
+    # git_authorized_keys as a playbook var (instead of git_keys) directly; the
+    # role setting will override the playbook var, if I remember correctly.
+
+    # Note that sbonnevi.pub will also have access to myproject1 and repowithnokey!
+    # Note that foo.pub will also have access to my_project2 and repowithnokey!
+    # Why?  Because all three repos belong to the "git" user on the target server.
+    # Setting up authentication to one sets it up for all, because the keys just 
+    # get copied into ~git/.ssh/authorized_keys by the role.
+
+    - { role: git_server, git_project: my_project1, git_authorized_keys: files/authorized_keys/foo.pub }
+
+    - { role: git_server, git_project: my_project2, git_authorized_keys: "{{ git_keys }}" }
+
+    # Repository setup with no SSH keys -- someone will have to add some in some
+    # other way (like in vars or by another role run, or another playbook), since 
+    # the git user has no valid password
+    
+    - { role: git_server, git_project: repowithnokey }
+
+

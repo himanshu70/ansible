@@ -1,0 +1,6 @@
+---
+- name: System information
+  hosts: all
+  tasks:
+    - name: systeminfo
+      shell: uname -a

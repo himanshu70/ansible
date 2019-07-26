@@ -1,0 +1,56 @@
+- hosts: all
+
+  vars:
+
+    ipa_domain: lab.example.com
+    ipa_realm: LAB.EXAMPLE.COM
+    # This is the emergency password for 'cn=Directory Manager'
+    ipa_ds_password: einstein
+    # This is the initial password for the 'admin' IPA superuser (web UI)
+    ipa_admin_password: redhat321
+    ipa_server_packages:
+      - freeipa-server
+      - ipa-server-dns
+      - rng-tools
+    ipa_hostgroups:
+      - development
+      - testing
+      - production
+
+  tasks:
+
+    - name: Get IPA "admin" user Kerberos credentials
+      command: echo {{ ipa_admin_password }} | kinit -f admin
+      changed_when: false
+
+    - name: Check existence of "development" hostgroup
+      command: ipa hostgroup-find development
+      register: development_exists
+      changed_when: false
+      ignore_errors: true
+
+    - name: Check existence of "testing" hostgroup
+      command: ipa hostgroup-find testing
+      register: testing_exists
+      changed_when: false
+      ignore_errors: true
+
+    - name: Check existence of "production" hostgroup 
+      command: ipa hostgroup-find production
+      register: production_exists
+      changed_when: false
+      ignore_errors: true
+
+    - name: Delete "development" hostgroup
+      command: ipa hostgroup-del development
+      when: development_exists.rc == 0
+
+    - name: Delete "testing" hostgroup
+      command: ipa hostgroup-del testing
+      when: testing_exists.rc == 0
+
+    - name: Delete "production" hostgroup
+      command: ipa hostgroup-del production
+      when: production_exists.rc == 0
+
+

@@ -1,0 +1,6 @@
+- name: Poll Tower over HTTPS
+  uri:
+    url: https://tower.lab.example.com
+    validate_certs: no
+  tags:
+    - polltower

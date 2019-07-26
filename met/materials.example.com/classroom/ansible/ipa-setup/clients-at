@@ -1,0 +1,3 @@
+echo "=== $(date) ===" &>> /var/tmp/labs/clients-at.log
+
+cd /root/ansible/ipa-setup &>> /var/tmp/labs/clients-at.log && ansible-playbook --limit "tower.lab.example.com,workstation.lab.example.com" -i /root/ansible/ipa-setup/inventory create_client.yml --extra-vars "ansible_sudo_pass=student" &>> /var/tmp/labs/clients-at.log && selfsign-getcert request -d /etc/pki/nssdb -n IPC-Cert &>> /var/tmp/labs/clients-at.log && sleep 2 &>> /var/tmp/labs/clients-at.log && cp /etc/ipa/ca.crt /etc/pki/ca-trust/source/anchors/ipa-cert.crt &>> /var/tmp/labs/clients-at.log && sleep 2 &>> /var/tmp/labs/clients-at.log && update-ca-trust &>> /var/tmp/labs/clients-at.log && trust anchor /etc/ipa/ca.crt &>> /var/tmp/labs/clients-at.log

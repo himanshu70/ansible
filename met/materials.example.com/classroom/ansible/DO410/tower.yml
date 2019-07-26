@@ -1,0 +1,5 @@
+---
+- name: Install Ansible Tower and license 
+  hosts: tower
+  roles:
+  - tower

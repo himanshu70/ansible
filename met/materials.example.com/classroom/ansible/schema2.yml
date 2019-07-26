@@ -1,0 +1,11 @@
+- id: 9
+  project: My Webservers TEST
+  success_nodes:
+  - id: 10
+    job_template: TEST webservers setup
+    success_nodes:
+    - id: 11
+      project: My Webservers PROD
+      success_nodes:
+      - id: 12
+        job_template: PROD webservers setup

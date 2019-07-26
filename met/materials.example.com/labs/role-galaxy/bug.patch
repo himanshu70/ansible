@@ -1,0 +1,14 @@
+diff --git a/templates/_bashrc.j2 b/templates/_bashrc.j2
+index bc3514b..0a95418 100644
+--- a/templates/_bashrc.j2
++++ b/templates/_bashrc.j2
+@@ -1,7 +1,7 @@
+ # .bashrc
+
+ # Source global definitions
+-if [ -f /etc/bashrc ; then
++if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+ fi
+
+

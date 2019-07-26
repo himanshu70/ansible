@@ -1,0 +1,46 @@
+---
+
+- name: Cleanup after system roles GE
+  hosts: database_servers
+  gather_facts: no
+  tasks:
+    - name: Reset timezone
+      timezone:
+        name: America/New_York
+
+    - name: Remove /etc/sysconfig files
+      file:
+        path: "{{ item }}"
+        state: absent
+      loop:
+        - /etc/chrony.conf
+        - /etc/sysconfig/chronyd
+        - /etc/sysconfig/network
+
+    - name: Reset chrony.conf
+      file:
+        src: /etc/chrony.conf-rht
+        dest: /etc/chrony.conf
+        owner: root
+        group: root
+        state: link
+
+    - name: Reset /etc/sysconfig/chronyd
+      copy:
+        content: |-
+           # Command-line options for chronyd
+           OPTIONS=""
+        dest: /etc/sysconfig/chronyd
+        owner: root
+        group: root
+        mode: 0644
+
+    - name: Reset /etc/sysconfig/network
+      copy:
+        content: |-
+           NETWORKING=yes
+           NOZEROCONF=yes
+        dest: /etc/sysconfig/network
+        owner: root
+        group: root
+        mode: 0644

@@ -1,0 +1,43 @@
+---
+- name: Setup GE git repo
+  hosts: workstation.lab.example.com
+  gather_facts: no
+  vars:
+    role_tar_balls:
+      - name: bash_env
+        tar: bash_env.tar
+  tasks:
+    - name: Ensure git is installed
+      package:
+        name: git
+        state: present
+    - name: Ensure git user exists
+      user:
+        name: git
+        state: present
+    - name: Ensure student directory exists
+      file:
+        path: /home/git/student
+        state: directory
+        mode: 0755
+        owner: git
+        group: git
+    - name: Set authorized_keys for student
+      authorized_key:
+        user: git
+        state: present
+        key: "{{ lookup('file', '/home/student/.ssh/lab_rsa.pub') }}"
+    - name: Remove old repo artifacts
+      file:
+        path: /home/git/student/{{ item.name }}
+        state: absent
+      loop: "{{ role_tar_balls }}"
+    - name: Unpack git repos
+      unarchive:
+        src: http://materials.example.com/labs/role-galaxy/{{ item.tar }}
+        dest: /home/git/student
+        remote_src: yes
+        owner: git
+        group: git
+      loop: "{{ role_tar_balls }}"
+

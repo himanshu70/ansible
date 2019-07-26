@@ -1,0 +1,35 @@
+---
+- name: Repository Configuration
+  hosts: all
+  gather_facts: no
+  vars:
+    custom_pkg: example-motd
+    valid_repo_files:
+      - /etc/yum.repos.d/ansible.repo
+      - /etc/yum.repos.d/redhat.repo
+      - /etc/yum.repos.d/rhel_dvd.repo
+  tasks:
+    - name: Ensure Repo RPM Key is Absent
+      rpm_key:
+        key: http://materials.example.com/yum/repository/RPM-GPG-KEY-example
+        state: absent
+
+    - name: Ensure Example motd package is Absent
+      yum:
+        name: "{{ custom_pkg }}"
+        state: absent
+
+    - name: Get Repo Files
+      find:
+        paths: /etc/yum.repos.d
+        patterns: '*.repo'
+      register: repo_files
+
+    - name: Remove extraneous repo files
+      file:
+        path: "{{ item.path }}"
+        state: absent
+      loop: "{{ repo_files.files }}"
+      when: item.path not in valid_repo_files
+
+

@@ -1,0 +1,4 @@
+localhost        ansible_connection=local
+utility          ansible_host=utility.lab.example.com
+tower            ansible_host=tower.lab.example.com
+git              ansible_host=git.lab.example.com

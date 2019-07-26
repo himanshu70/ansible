@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /classroom/ansible/ipa-setup</title>
+ </head>
+ <body>
+<h1>Index of /classroom/ansible/ipa-setup</h1>
+  <table>
+   <tr><th valign="top"><img src="http://materials.example.com/icons/blank.gif" alt="[ICO]"></th><th><a href="index.html?C=N%3BO=A">Name</a></th><th><a href="index.html?C=M%3BO=A">Last modified</a></th><th><a href="index.html?C=S%3BO=A">Size</a></th><th><a href="index.html?C=D%3BO=D">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="../index.html">Parent Directory</a>       </td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/text.gif" alt="[TXT]"></td><td><a href="ansible.cfg">ansible.cfg</a>            </td><td align="right">2019-01-10 17:35  </td><td align="right">388 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/unknown.gif" alt="[   ]"></td><td><a href="clients-at">clients-at</a>             </td><td align="right">2019-01-10 17:35  </td><td align="right">723 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/text.gif" alt="[TXT]"></td><td><a href="create_client.yml">create_client.yml</a>      </td><td align="right">2019-01-10 17:35  </td><td align="right">3.2K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/unknown.gif" alt="[   ]"></td><td><a href="create_client2.yml">create_client2.yml</a>     </td><td align="right">2019-01-10 17:35  </td><td align="right">1.9K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/text.gif" alt="[TXT]"></td><td><a href="create_ipa_server.yml">create_ipa_server.yml</a>  </td><td align="right">2019-01-10 17:35  </td><td align="right">3.7K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/unknown.gif" alt="[   ]"></td><td><a href="create_ipa_server_hostgroups.yml">create_ipa_server_ho..&gt;</a></td><td align="right">2019-01-10 17:35  </td><td align="right">1.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/text.gif" alt="[TXT]"></td><td><a href="delete_ipa_server_hostgroups.yml">delete_ipa_server_ho..&gt;</a></td><td align="right">2019-01-10 17:35  </td><td align="right">1.5K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/unknown.gif" alt="[   ]"></td><td><a href="hostgroups-at">hostgroups-at</a>          </td><td align="right">2019-01-10 17:35  </td><td align="right">252 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/unknown.gif" alt="[   ]"></td><td><a href="inventory">inventory</a>              </td><td align="right">2019-01-10 17:35  </td><td align="right">363 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/text.gif" alt="[TXT]"></td><td><a href="ldap-freeipa.py">ldap-freeipa.py</a>        </td><td align="right">2019-01-10 17:35  </td><td align="right">4.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/unknown.gif" alt="[   ]"></td><td><a href="ldap-freeipa.pyc">ldap-freeipa.pyc</a>       </td><td align="right">2019-01-10 17:35  </td><td align="right">2.5K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/unknown.gif" alt="[   ]"></td><td><a href="ldap-freeipa.pyo">ldap-freeipa.pyo</a>       </td><td align="right">2019-01-10 17:35  </td><td align="right">2.5K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/text.gif" alt="[TXT]"></td><td><a href="ldap-idm.py">ldap-idm.py</a>            </td><td align="right">2019-01-10 17:35  </td><td align="right">4.6K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/unknown.gif" alt="[   ]"></td><td><a href="ldap-idm.pyc">ldap-idm.pyc</a>           </td><td align="right">2019-01-10 17:35  </td><td align="right">2.5K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/unknown.gif" alt="[   ]"></td><td><a href="ldap-idm.pyo">ldap-idm.pyo</a>           </td><td align="right">2019-01-10 17:35  </td><td align="right">2.5K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/unknown.gif" alt="[   ]"></td><td><a href="remove_client.yml">remove_client.yml</a>      </td><td align="right">2019-01-10 17:35  </td><td align="right">546 </td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+</body></html>

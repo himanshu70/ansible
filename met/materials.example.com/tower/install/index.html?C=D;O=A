@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /tower/install</title>
+ </head>
+ <body>
+<h1>Index of /tower/install</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=A">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=D">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/tower/">Parent Directory</a>       </td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="Ansible-Tower-license.txt">Ansible-Tower-licens..&gt;</a></td><td align="right">2019-01-10 17:35  </td><td align="right">485 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="epel.repo">epel.repo</a>              </td><td align="right">2019-01-10 17:35  </td><td align="right">177 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="inventory.install">inventory.install</a>      </td><td align="right">2019-01-10 17:35  </td><td align="right">370 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="inventory.orig">inventory.orig</a>         </td><td align="right">2019-01-10 17:35  </td><td align="right">352 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="rhel_updates.repo">rhel_updates.repo</a>      </td><td align="right">2019-01-10 17:35  </td><td align="right">172 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="tower-backup-latest.tar.gz">tower-backup-latest...&gt;</a></td><td align="right">2019-01-10 17:35  </td><td align="right"> 51K</td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+</body></html>

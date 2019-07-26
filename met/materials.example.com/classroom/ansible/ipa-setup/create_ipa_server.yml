@@ -1,0 +1,125 @@
+# create_ipa_server.yml
+# Steve Bonneville <sbonnevi@redhat.com>
+
+- hosts: utility.lab.example.com
+
+  vars:
+
+    ipa_domain: lab.example.com
+    ipa_realm: LAB.EXAMPLE.COM
+    # This is the emergency password for 'cn=Directory Manager'
+    ipa_ds_password: einstein
+    # This is the initial password for the 'admin' IPA superuser (web UI)
+    ipa_admin_password: redhat321
+    ipa_server_packages:
+      - freeipa-server
+      - ipa-server-dns
+      - rng-tools
+    ipa_hostgroups:
+      - development
+      - testing
+      - production
+    # Only used by commented out firewalld tasks
+    ipa_firewalld_services:
+      - freeipa-ldap
+      - freeipa-ldaps
+      - dns
+
+  tasks:
+
+    # Uncomment if needed to set firewalld up properly
+
+    - name: firewalld is enabled and started
+      service: 
+        name: firewalld 
+        state: started
+        enabled: yes
+
+    - name: Enable firewall services for FreeIPA in public zone
+      firewalld:
+        service: "{{ item }}"
+        zone: public
+        permanent: true
+        immediate: true
+        state: enabled
+      with_items: "{{ ipa_firewalld_services }}"
+
+    - name: /etc/hosts 127.0.0.1 should not resolve to FQDN
+      lineinfile:
+        dest: /etc/hosts
+        regexp: '^127\.0\.0\.1'
+        line: '127.0.0.1 localhost localhost.localdomain localhost4 localhost4.localdomain4'
+        state: present
+
+    - name: FQDN resolves to default IPv4 address in /etc/hosts
+      lineinfile:
+        dest: /etc/hosts
+        line: "{{ ansible_default_ipv4.address }} {{ ansible_fqdn }} {{ ansible_hostname }}"
+        state: present
+
+    - name: FreeIPA server packages installed
+      package:
+        name: "{{ item }}"
+        state: latest
+      with_items: "{{ ipa_server_packages }}"
+
+    - name: rngd service running to avoid install blocking on entropy issues
+      service:
+        name: rngd
+        enabled: yes
+        state: started
+    
+    # Not idempotent, will explode if IPA server exists.  Need to add
+    #   check to test that and skip this task if it does.
+    # Does not set up DNS for lab.example.com at this time; future enhancement?
+    # Also currently seems to complete but reports failure because of
+    #   DNS not being the same as classroom.example.com in my test env.
+    # Expect this task to take significant time to run.
+
+    - name: Set up FreeIPA server (may take some time to run)
+      command: >
+        ipa-server-install 
+        --domain={{ ipa_domain }}
+        --realm={{ ipa_realm }}
+        --ds-password={{ ipa_ds_password }}
+        --admin-password={{ ipa_admin_password }}
+        --hostname={{ ansible_fqdn }}
+        --ip-address={{ ansible_default_ipv4.address }}
+        --no-ntp
+        --mkhomedir
+        --unattended
+
+    - name: Get IPA "admin" user Kerberos credentials
+      shell: echo {{ ipa_admin_password }} | kinit -f admin
+      changed_when: false
+
+    - name: Check existence of "development" hostgroup
+      command: ipa hostgroup-find development
+      register: development_exists
+      changed_when: false
+      ignore_errors: true
+
+    - name: Check existence of "testing" hostgroup
+      command: ipa hostgroup-find testing
+      register: testing_exists
+      changed_when: false
+      ignore_errors: true
+
+    - name: Check existence of "production" hostgroup
+      command: ipa hostgroup-find production
+      register: production_exists
+      changed_when: false
+      ignore_errors: true
+
+    - name: Create "development" hostgroup
+      command: ipa hostgroup-add development
+      when: development_exists.rc == 1
+
+    - name: Create "testing" hostgroup
+      command: ipa hostgroup-add testing
+      when: testing_exists.rc == 1
+
+    - name: Create "production" hostgroup
+      command: ipa hostgroup-add production
+      when: production_exists.rc == 1
+

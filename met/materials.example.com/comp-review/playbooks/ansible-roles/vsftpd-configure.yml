@@ -1,0 +1,45 @@
+---
+- name: Install and configure vsftpd
+  hosts: ftpservers
+  become: true
+  remote_user: devops
+  vars:
+    vsftpd_anon_root: /mnt/share/
+    vsftpd_local_root: /mnt/share/
+    vsftpd_anonymous_enable: true
+
+  roles:
+    - ansible-vsftpd
+
+  post_tasks:
+    - name: Partition disks
+      command: creates=/dev/vdb1 parted --script /dev/vdb mklabel gpt mkpart primary 1MiB 100%
+
+    - name: Ensure anon_root directory exists
+      file:
+        path: '{{ vsftpd_anon_root }}'
+        owner: root
+        group: root
+        state: directory
+        setype: '{{ vsftpd_setype }}'
+        mode: '0755'
+
+    - name: Create file system on /dev/vdb
+      filesystem:
+        dev: /dev/vdb1
+        fstype: xfs
+        force: no
+
+    - name: Mount the file system
+      mount:
+        name: '{{ vsftpd_anon_root }}'
+        src: /dev/vdb1
+        fstype: xfs
+        state: mounted
+
+    - name: Copy some file to the ftp root
+      copy:
+        dest: '{{ vsftpd_anon_root }}/README'
+        content: "Welcome to the FTP server at {{ ansible_fqdn }}\n"
+        setype: '{{ vsftpd_setype }}'
+

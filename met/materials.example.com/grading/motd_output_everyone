@@ -1,0 +1,2 @@
+localhost | SUCCESS | rc=0 | (stdout) Managed by Ansible
+servera.lab.example.com | SUCCESS | rc=0 | (stdout) Managed by Ansible

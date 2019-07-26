@@ -1,0 +1,15 @@
+- name: Ensure database permission groups exist
+  group:
+    name:
+    state: present
+  #Add a loop
+
+- name: Ensure Database Users exist
+  user:
+    name:
+    groups:
+    append: yes
+    state: present
+  #Add a loop
+  #Add a when
+

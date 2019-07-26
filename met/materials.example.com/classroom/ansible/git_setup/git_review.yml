@@ -1,0 +1,4 @@
+- hosts: git-servers
+  become: yes
+  roles:
+    - { role: git_server, git_project: full-stack-setup, git_authorized_keys: keys/student_key.pub }

@@ -1,0 +1,5 @@
+[control-node]
+localhost
+
+[intranetweb]
+servera.lab.example.com

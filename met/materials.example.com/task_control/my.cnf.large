@@ -1,0 +1,50 @@
+# Ansible file
+[mysqld]
+datadir=/var/lib/mysql
+socket=/var/lib/mysql/mysql.sock
+# Disabling symbolic-links is recommended to prevent assorted security risks
+symbolic-links=0
+# Settings user and group are ignored when systemd is used.
+# If you need to run mysqld under a different user or group,
+# customize your systemd unit file for mariadb according to the
+# instructions in http://fedoraproject.org/wiki/Systemd
+
+[mysqld_safe]
+log-error=/var/log/mariadb/mariadb.log
+pid-file=/var/run/mariadb/mariadb.pid
+
+#
+# include all files from the config directory
+#
+!includedir /etc/my.cnf.d
+
+table_open_cache = 1024
+port    = 3306
+socket    = /var/lib/mysql/mysql.sock
+skip-external-locking
+key_buffer_size = 12M
+max_allowed_packet = 16M
+
+join_buffer_size = 256K
+sort_buffer_size = 256K
+read_buffer_size = 256K
+
+table_open_cache = 1024
+port    = 3306
+socket    = /var/lib/mysql/mysql.sock
+skip-external-locking
+key_buffer_size = 12M
+max_allowed_packet = 16M
+myisam_sort_buffer_size = 32M
+
+query_cache_size = 64K
+query_cache_limit = 80000
+query_cache_min_res_unit = 2048
+thread_concurrency = 8
+table_definition_cache = 16384
+low_priority_updates=1
+
+innodb_buffer_pool_size = 2512M
+innodb_additional_mem_pool_size = 20M
+innodb_log_buffer_size = 8M
+concurrent_insert=2

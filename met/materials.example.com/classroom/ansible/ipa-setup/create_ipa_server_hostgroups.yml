@@ -1,0 +1,42 @@
+- hosts: utility.lab.example.com
+
+  vars:
+
+    ipa_admin_password: redhat321
+
+  tasks:
+
+    - name: Get IPA "admin" user Kerberos credentials
+      shell: echo {{ ipa_admin_password }} | kinit -f admin
+      changed_when: false
+
+    - name: Check existence of "development" hostgroup
+      command: ipa hostgroup-find development
+      register: development_exists
+      changed_when: false
+      ignore_errors: true
+
+    - name: Check existence of "testing" hostgroup
+      command: ipa hostgroup-find testing
+      register: testing_exists
+      changed_when: false
+      ignore_errors: true
+
+    - name: Check existence of "production" hostgroup
+      command: ipa hostgroup-find production
+      register: production_exists
+      changed_when: false
+      ignore_errors: true
+
+    - name: Create "development" hostgroup
+      command: ipa hostgroup-add development
+      when: development_exists.rc == 1
+
+    - name: Create "testing" hostgroup
+      command: ipa hostgroup-add testing
+      when: testing_exists.rc == 1
+
+    - name: Create "production" hostgroup
+      command: ipa hostgroup-add production
+      when: production_exists.rc == 1
+

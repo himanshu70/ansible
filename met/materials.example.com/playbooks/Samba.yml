@@ -1,0 +1,37 @@
+---
+- name: Installs a Samba server
+  hosts: myhosts
+  user: root
+  vars:
+    install_state: installed
+    workgroup_name: Red Hat Training
+    daemon_name: smb
+    service_name: samba
+  tasks:
+    - name: install {{ service_name }}
+      yum:
+        name: "{{ item }}"
+        state: "{{ install_state }}"
+      with_items:
+        - "{{ service_name }}"
+        - samba-common
+    - name: "template /etc/samba/{{daemon_name }}.conf"
+      template:
+        src: "templates/{{daemon_name }}.conf.j2"
+        dest: "/etc/samba/{{daemon_name }}.conf"
+        owner: root
+        group: root
+        mode: 0644
+      notify:
+        -reload {{ service_name }}
+    - name: start and enable the service
+      service:
+        name: "{{daemon_name }}"
+        state: started
+        enabled: True
+
+  handlers:
+    - name: reload {{ service_name }}
+      service:
+        name: "{{daemon_name }}"
+        state: reloaded

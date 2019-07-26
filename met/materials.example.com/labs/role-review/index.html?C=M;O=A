@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /labs/role-review</title>
+ </head>
+ <body>
+<h1>Index of /labs/role-review</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=A">Name</a></th><th><a href="?C=M;O=D">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/labs/">Parent Directory</a>       </td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="ansible.cfg">ansible.cfg</a>            </td><td align="right">2019-01-10 17:35  </td><td align="right">192 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/tar.gif" alt="[   ]"></td><td><a href="apache.tar">apache.tar</a>             </td><td align="right">2019-01-10 17:35  </td><td align="right">140K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="apache_cleanup.yml">apache_cleanup.yml</a>     </td><td align="right">2019-01-10 17:35  </td><td align="right">502 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="developer.conf.j2">developer.conf.j2</a>      </td><td align="right">2019-01-10 17:35  </td><td align="right">577 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="developer_cleanup.yml">developer_cleanup.yml</a>  </td><td align="right">2019-01-10 17:35  </td><td align="right">721 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="developer_tasks.yml">developer_tasks.yml</a>    </td><td align="right">2019-01-10 17:35  </td><td align="right">1.4K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="inventory">inventory</a>              </td><td align="right">2019-01-10 17:35  </td><td align="right"> 85 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="selinux.yml">selinux.yml</a>            </td><td align="right">2019-01-10 17:35  </td><td align="right">224 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="selinux_cleanup.yml">selinux_cleanup.yml</a>    </td><td align="right">2019-01-10 17:35  </td><td align="right">1.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="setup_repo.yml">setup_repo.yml</a>         </td><td align="right">2019-01-10 17:35  </td><td align="right">1.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="solution.yml">solution.yml</a>           </td><td align="right">2019-01-10 17:35  </td><td align="right">865 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="web_developers.yml">web_developers.yml</a>     </td><td align="right">2019-01-10 17:35  </td><td align="right">140 </td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+</body></html>

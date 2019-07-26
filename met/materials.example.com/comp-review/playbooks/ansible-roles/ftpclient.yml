@@ -1,0 +1,10 @@
+---
+- name: ftp client installed
+  hosts: ftpclients
+  remote_user: devops
+  become: yes
+  tasks:
+    - name: latest lftp version installed
+      yum: 
+        name: lftp 
+        state: latest

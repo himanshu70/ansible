@@ -1,0 +1,6 @@
+[myhosts]
+servera.lab.example.com
+
+[myhosts:vars]
+ansible_connection=local
+ansible_python_interpreter="/usr/bin/env python"

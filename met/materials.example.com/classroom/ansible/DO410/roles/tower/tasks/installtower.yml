@@ -1,0 +1,8 @@
+---
+- name: Install Ansible Tower
+  shell: ./setup.sh
+  args:
+    chdir: /root/ansible-tower-setup-bundle-{{ tower_version }}
+  tags:
+    -  installtower
+    

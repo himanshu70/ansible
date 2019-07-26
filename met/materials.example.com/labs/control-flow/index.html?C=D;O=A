@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /labs/control-flow</title>
+ </head>
+ <body>
+<h1>Index of /labs/control-flow</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=A">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=D">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/labs/">Parent Directory</a>       </td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="RedHat_database_tasks.yml">RedHat_database_task..&gt;</a></td><td align="right">2019-01-10 17:35  </td><td align="right">552 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="RedHat_database_tasks_solution.yml">RedHat_database_task..&gt;</a></td><td align="right">2019-01-10 17:35  </td><td align="right">567 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="ansible.cfg">ansible.cfg</a>            </td><td align="right">2019-01-10 17:35  </td><td align="right">144 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="database_setup.yml">database_setup.yml</a>     </td><td align="right">2019-01-10 17:35  </td><td align="right">856 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="database_setup_solution.yml">database_setup_solut..&gt;</a></td><td align="right">2019-01-10 17:35  </td><td align="right">1.0K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="database_users_tasks.yml">database_users_tasks..&gt;</a></td><td align="right">2019-01-10 17:35  </td><td align="right">231 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="database_users_tasks_solution.yml">database_users_tasks..&gt;</a></td><td align="right">2019-01-10 17:35  </td><td align="right">351 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="group_vars/">group_vars/</a>            </td><td align="right">2019-07-22 17:00  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="inventory">inventory</a>              </td><td align="right">2019-01-10 17:35  </td><td align="right"> 83 </td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+</body></html>

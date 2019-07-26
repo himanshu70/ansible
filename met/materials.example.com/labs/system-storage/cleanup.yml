@@ -1,0 +1,61 @@
+---
+- name: Configure Apache Storage
+  hosts: webservers
+  vars_files:
+    - storage_vars.yml
+
+  tasks:
+    # The first two tasks are structured as workarounds
+    # for a bug in the mount module when using state absent.
+    # Unmounting and removing fstab entries should be accomplished
+    # with a single task in future updates to the mount module.
+    # Currently the two tasksa are identical with the exception of
+    # the failed_when option. Without the two tasks this playbook
+    # would have to be ran twice to succeed. Thus the bug.
+    - name: Logical Volume is unmounted
+      mount:
+        path: "{{ item.mount }}"
+        src: "{{ item.device }}"
+        fstype: "{{ item.fstype }}"
+        state: absent
+      failed_when: false
+      loop: "{{ ansible_mounts }}"
+      when: item.mount != "/"
+
+    - name: Remove fstab entries
+      mount:
+        path: "{{ item.mount }}"
+        src: "{{ item.device }}"
+        fstype: "{{ item.fstype }}"
+        state: absent
+      loop: "{{ ansible_mounts }}"
+      when: item.mount != "/"
+
+    - name: Remove Logical Volumes
+      lvol:
+        vg: "{{ item.value.vg }}"
+        lv: "{{ item.key }}"
+        state: absent
+        force: yes
+      loop: "{{ ansible_lvm['lvs'] | dict2items }}"
+
+    - name: Remove Volume Groups
+      lvg:
+        vg: "{{ item.key }}"
+        state: absent
+        force: yes
+      loop: "{{  ansible_lvm['vgs'] | dict2items }}"
+
+    - name: Register partition information
+      parted:
+        device: /dev/vdb
+        unit: MiB
+      register: vdb_info
+
+    - name: Remove all partitions
+      parted:
+        device: /dev/vdb
+        number: "{{ item.num }}"
+        state: absent
+      loop: "{{ vdb_info.partitions }}"
+

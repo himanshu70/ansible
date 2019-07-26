@@ -1,0 +1,56 @@
+---
+- hosts: serverb.lab.example.com
+
+  tasks:
+    - name : Install htpd
+      package:
+        name: httpd
+        state: installed
+
+    - name: Start httpd
+      service:
+        name: httpd
+        state: started
+        enabled: yes
+
+    - name: Install MariaDB
+      package:
+        name: mariadb-server
+        state: installed
+
+    - name: Start MariaDB
+      service:
+        name: mariadb
+        state: started
+        enabled: yes
+
+    - name: Install WordPress dependencies
+      package:
+        name: "{{ item }}"
+        state: installed
+      with_items:
+        - php
+        - php-gd
+        - php-mysql
+      notify:
+        - Restart httpd
+
+    - name: Unpack WordPress
+      unarchive:
+        src:  http://materials.example.com/wordpress.tgz
+        dest: /var/www/html
+        owner: apache
+        group: apache
+        copy: no
+
+    - name: Add a firewall rule
+      firewalld:
+        service: http
+        permanent: True
+        state: enabled
+
+  handlers:
+    - name: Restart httpd
+      service:
+        name: httpd
+        state: restarted

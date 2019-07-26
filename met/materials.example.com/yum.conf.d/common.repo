@@ -1,0 +1,5 @@
+[common]
+baseurl = http://content.example.com/rhel7.6/x86_64/extras/rhel-7-server-rh-common-rpms/
+enabled = true
+gpgcheck = false
+name = RHEL Common packages

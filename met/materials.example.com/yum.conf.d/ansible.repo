@@ -1,0 +1,5 @@
+[ansible]
+name=Ansible Repository
+baseurl=http://content.example.com/rhel7.6/x86_64/extras/rhel-7-server-ansible-2.7-rpms/
+gpgcheck=0
+

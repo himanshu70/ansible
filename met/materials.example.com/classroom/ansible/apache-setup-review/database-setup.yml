@@ -1,0 +1,27 @@
+---
+- hosts: servera.lab.example.com, serverd.lab.example.com, servere.lab.example.com, serverf.lab.example.com
+  name: Install MariaDB database server and start it
+  become: yes
+  tasks:
+    - name: Install MariaDB
+      package:
+        name: mariadb-server
+        state: installed
+    - name: Start MariaDB
+      service:
+        name: mariadb
+        state: started
+        enabled: yes
+    - name: Open the firewalld mariadb port
+      firewalld:
+        port: 3306/tcp
+        permanent: true
+        state: enabled
+      notify: restart firewalld service
+  
+  handlers:
+    - name: restart firewalld service
+      service:
+        name: firewalld
+        state: restarted
+        enabled: yes

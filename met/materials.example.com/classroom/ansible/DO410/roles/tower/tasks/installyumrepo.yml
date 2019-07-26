@@ -1,0 +1,10 @@
+---
+- name: Install rhel_updates yum repo
+  yum_repository:
+    name: rhel_updates
+    baseurl: 'http://content.example.com/tower3.3/x86_64/dvd/repos/edu-tower3.3-rpms' 
+    enabled: yes 
+    gpgcheck: no 
+    description: Remote classroom copy of dependencies for tower-cli
+  tags:
+    - installyumrepo

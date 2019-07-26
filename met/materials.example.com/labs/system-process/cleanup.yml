@@ -1,0 +1,16 @@
+---
+- name: Remove crontab and set multi-user target
+  hosts: all
+  gather_facts: no
+
+  tasks:
+    - name: Crontab file is removed
+      cron:
+        cron_file: add-date-time
+        state: absent
+
+    - name: Default runlevel is multi-user target
+      file:
+        src: /usr/lib/systemd/system/multi-user.target
+        dest: /etc/systemd/system/default.target
+        state: link

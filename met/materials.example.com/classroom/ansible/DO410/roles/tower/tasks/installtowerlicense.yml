@@ -1,0 +1,26 @@
+---
+- name:  Retrieve Tower license
+
+  uri:
+    url: http://materials.example.com/tower/install/Ansible-Tower-license.txt
+    status_code: 200
+    return_content: yes
+
+  register: license
+
+  tags:
+    - installtowerlicense
+
+- name:  Install Tower license
+  uri:
+    url: https://tower.lab.example.com/api/v1/config/
+    method: POST
+    body: "{{ license.content }}"
+    body_format: json
+    status_code: 200
+    user: admin
+    password: redhat
+    validate_certs: no
+
+  tags:
+    - installtowerlicense

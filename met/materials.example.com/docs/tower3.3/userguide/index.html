@@ -1,0 +1,777 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <script type="text/javascript" src="https://www.redhat.com/dtm.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta class="swiftype" name="published_at" data-type="date" content="2018-10-25" /> 
+  <meta class="swiftype" name="version" data-type="string" content="3.3.1">
+
+
+  <!-- this ^ ^ is for the original publishing date only, never for minor pushes that aren't actual version bumps of the docs (this helps us keep our search rank weighting in swiftype, our search server, prioritized based on the dates of the releases themselves) -->
+
+  <script>
+  var url = window.location.href;
+  if(url.indexOf("latest") == -1){
+   var version = url.replace("http://docs.ansible.com/ansible-tower/","");
+   version = version.substring(0,url.indexOf("/"));
+   url = url.replace(version,"latest");
+  }
+  var canon = document.createElement('link');
+  canon.rel = "canonical";
+  canon.href = url;
+  document.head.appendChild(canon);
+  </script>
+
+  <!-- Google Tag Manager Data Layer -->
+  <script>
+   dataLayer = [];
+  </script>
+  <!-- End Google Tag Manager Data Layer -->
+
+  
+  <title>Ansible Tower User Guide v3.3.1 &mdash; Ansible Tower User Guide v3.3.1</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+  
+  
+
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:'./',
+        VERSION:'Ansible Tower 3.3.1',
+        COLLAPSE_INDEX:false,
+        FILE_SUFFIX:'.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+      <script type="text/javascript" src="jquery.js"></script>
+      <script type="text/javascript" src="underscore.js"></script>
+      <script type="text/javascript" src="doctools.js"></script>
+
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="theme.min.css" type="text/css" />
+    <script type="text/javascript" src="theme.js"></script>
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Ansible Tower User Guide v3.3.1" href="index.html#"/>
+        <link rel="next" title="1. Overview" href="overview.html"/> 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+  <style>
+    .search-reset-start {
+        color: #463E3F;
+        float: right;
+        position: relative;
+        top: -25px;
+        left: -10px;
+        z-index: 10;
+     }
+     .search-reset-start:hover {
+        cursor: pointer;
+        color: #2980B9;
+     }
+     #search-box-id {
+        padding-right: 25px;
+     }
+  </style>
+
+  <!-- Google Code for Remarketing Tag
+  <script type="text/javascript">
+  /* <![CDATA[ */
+  var google_conversion_id = 972577926;
+  var google_custom_params = window.google_tag_params;
+  var google_remarketing_only = true;
+  /* ]]> */
+  </script>
+  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+  </script>
+  <noscript>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt=""
+              src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/972577926/?value=0&amp;guid=ON&amp;script=0"/>
+    </div>
+  </noscript>
+  End of Google Code for Remarketing Tag -->
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300'
+      rel='stylesheet' type='text/css'>
+
+  <script type='text/javascript'>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function() {
+      var gads = document.createElement('script');
+      gads.async = true;
+      gads.type = 'text/javascript';
+      var useSSL = 'https:' == document.location.protocol;
+      gads.src = (useSSL ? 'https:' : 'http:') +
+        '//www.googletagservices.com/tag/js/gpt.js';
+      var node = document.getElementsByTagName('script')[0];
+      node.parentNode.insertBefore(gads, node);
+    })();
+  </script>
+
+  <script type='text/javascript'>
+    googletag.cmd.push(function() {
+      googletag.defineSlot('/1171614047/towerleft', [300, 250], 'div-gpt-ad-1453398530439-0').addService(googletag.pubads());
+      googletag.pubads().enableSingleRequest();
+      googletag.enableServices();
+    });
+  </script>
+</head>
+
+<body class="wy-body-for-nav">
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSB293" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-PSB293');</script>
+<!-- End Google Tag Manager -->
+
+  <div class="DocSite-globalNav ansibleNav">
+        <ul>
+            <li><a href="https://www.ansible.com/ansiblefest" target="_blank">AnsibleFest</a></li>
+            <li><a href="https://www.ansible.com/tower" target="_blank">Products</a></li>
+            <li><a href="https://www.ansible.com/community" target="_blank">Community</a></li>
+            <li><a href="https://www.ansible.com/webinars-training" target="_blank">Webinars & Training</a></li>
+            <li><a href="https://www.ansible.com/blog" target="_blank">Blog</a></li>
+        </ul>
+    </div>
+
+<a class="DocSite-nav" href="http://docs.ansible.com/">
+  <img class="DocSiteNav-logo"
+    src="logo_invert.png"
+    alt="Ansible Logo">
+  <div class="DocSiteNav-title">
+    Documentation
+  </div>
+</a> 
+
+
+
+
+<div class="wy-grid-for-nav">
+
+  
+ <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+    <div style="background-color:#ff5850;height=80px;margin:'auto auto auto auto'">
+        <a class="DocSiteProduct-header DocSiteProduct-header--tower"
+            href="http://docs.ansible.com/ansible-tower/">
+            <div class="DocSiteProduct-productName">
+                <div class="DocSiteProduct-logoText">
+                    ANSIBLE TOWER 
+                    <div class="DocSiteProduct-CurrentVersion" align="right">
+                      v3.3.1
+                  </div>
+                </div>
+            </div>
+        </a>
+        
+
+        <div class="DocSiteProduct-CheckVersionPara">
+          Are you using the latest and greatest version of Ansible Tower? Find the <a class="DocSiteProduct-versionheader" href="http://docs.ansible.com/ansible-tower/">Ansible Tower documentation</a> set which best matches your version of Tower.
+            </div>
+    </div>
+    <div class="wy-side-nav-search" style="background-color:#ff5850;height=80px;margin:'auto auto auto auto'">
+      <!-- <a href="#" class="icon icon-home"> Ansible Tower User Guide</a> -->
+      <!-- <form class="wy-form" action="search.html" method="get">
+  <input type="text" name="q" placeholder="Search docs" />
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form> -->
+
+<!-- 
+<script>
+  (function() {
+    var cx = '004731659079655444432:zgjlf-tkhya';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script> -->
+
+<!-- <gcse:searchresults-only></gcse:searchresults-only> -->
+
+<!-- swiftype search script -->
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','Vcn_rXrPfye6ziaZJZRt','2.0.0');
+</script>
+
+<!-- <form id="search-form-id" action="">
+  <input type="text" class="st-default-search-input" name="query" placeholder="Search Tower Docs" id="search-box-id" /> 
+  <a class="search-reset-start" id="search-reset"><i class="fa fa-times"></i></a>
+  <a class="search-reset-start" id="search-start"><i class="fa fa-search"></i></a> 
+ </form> -->
+
+          
+
+
+<!-- <script type="text/javascript" src="http://www.google.com/cse/brand?form=search-form-id&inputbox=search-box-id"></script> -->
+
+<!-- 
+<script>
+  function executeQuery() {
+      var input = document.getElementById('search-box-id');
+      var element = google.search.cse.element.getElement('searchresults-only0');
+      element.resultsUrl = '/htmlout/search.html'
+      if (input.value == '') {
+          element.clearAllResults();
+          $('#page-content, .rst-footer-buttons, #search-start').show();
+          $('#search-results, #search-reset').hide();
+      } else {
+          $('#page-content, .rst-footer-buttons, #search-start').hide();
+          $('#search-results, #search-reset').show();
+          element.execute(input.value);
+      }
+      return false;
+      }
+
+  $('#search-reset').hide();
+
+  $('#search-box-id').css('background-position', '1em center');
+
+  $('#search-box-id').on('blur', function() {
+    $('#search-box-id').css('background-position', '1em center');
+  });
+
+  $('#search-start').click(function(e) { executeQuery(); });
+  $('#search-reset').click(function(e) { $('#search-box-id').val(''); executeQuery(); });
+
+  $('#search-form-id').submit(function(e) {
+      console.log('submitting!');
+      executeQuery();
+      e.preventDefault();
+      });
+</script>
+-->
+    </div>
+
+      <div id="menu-id" class="wy-menu wy-menu-vertical" data-spy="affix">
+        
+        
+            <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="index.html#">Ansible Tower User Guide v3.3.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">1. Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#real-time-playbook-output-and-exploration">1.1. Real-time Playbook Output and Exploration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#push-button-automation">1.2. &#8220;Push Button&#8221; Automation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#enhanced-and-simplifed-role-based-access-control-and-auditing">1.3. Enhanced and Simplifed Role-Based Access Control and Auditing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#cloud-autoscaling-flexibility">1.4. Cloud &amp; Autoscaling Flexibility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#the-ideal-restful-api">1.5. The Ideal RESTful API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#backup-and-restore">1.6. Backup and Restore</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#ansible-galaxy-integration">1.7. Ansible Galaxy Integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#inventory-support-for-openstack">1.8. Inventory Support for OpenStack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#remote-command-execution">1.9. Remote Command Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#system-tracking">1.10. System Tracking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#integrated-notifications">1.11. Integrated Notifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#satellite-and-cloudforms-integration">1.12. Satellite and CloudForms Integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#run-time-job-customization">1.13. Run-time Job Customization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#red-hat-insights-integration">1.14. Red Hat Insights Integration</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="license-support.html">2. Tower Licensing, Updates, and Support</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="license-support.html#support">2.1. Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license-support.html#trial-evaluation">2.2. Trial / Evaluation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license-support.html#subscription-types">2.3. Subscription Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license-support.html#licenses-and-node-counts">2.4. Licenses and Node Counts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license-support.html#license-features">2.5. License Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license-support.html#tower-component-licenses">2.6. Tower Component Licenses</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="logging_in.html">3. Logging In</a></li>
+<li class="toctree-l1"><a class="reference internal" href="import_license.html">4. Import a License</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="import_license.html#adding-a-tower-license-manually">4.1. Adding a Tower License Manually</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="main_menu.html">5. The Tower User Interface</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="main_menu.html#activity-streams">5.1. Activity Streams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main_menu.html#views">5.2. Views</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main_menu.html#resources-and-access">5.3. Resources and Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main_menu.html#tower-administration-menu">5.4. Tower Administration Menu</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="search_sort.html">6. Search</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="search_sort.html#searching-tips">6.1. Searching Tips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="search_sort.html#sort">6.2. Sort</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="organizations.html">7. Organizations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="organizations.html#creating-a-new-organization">7.1. Creating a New Organization</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="users.html">8. Users</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="users.html#create-a-user">8.1. Create a User</a></li>
+<li class="toctree-l2"><a class="reference internal" href="users.html#user-types-quick-view">8.2. User Types - Quick View</a></li>
+<li class="toctree-l2"><a class="reference internal" href="users.html#users-organizations">8.3. Users - Organizations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="users.html#users-teams">8.4. Users - Teams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="users.html#users-permissions">8.5. Users - Permissions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="teams.html">9. Teams</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="teams.html#create-a-team">9.1. Create a Team</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="credentials.html">10. Credentials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="credentials.html#understanding-how-credentials-work">10.1. Understanding How Credentials Work</a></li>
+<li class="toctree-l2"><a class="reference internal" href="credentials.html#getting-started-with-credentials">10.2. Getting Started with Credentials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="credentials.html#add-a-new-credential">10.3. Add a New Credential</a></li>
+<li class="toctree-l2"><a class="reference internal" href="credentials.html#credential-types">10.4. Credential Types</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="credential_types.html">11. Custom Credential Types</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="credential_types.html#backwards-compatible-api-considerations">11.1. Backwards-Compatible API Considerations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="credential_types.html#getting-started-with-credential-types">11.2. Getting Started with Credential Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="credential_types.html#create-a-new-credential-type">11.3. Create a New Credential Type</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="applications_auth.html">12. Applications</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="applications_auth.html#getting-started-with-applications">12.1. Getting Started with Applications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="applications_auth.html#create-a-new-application">12.2. Create a new application</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="projects.html">13. Projects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="projects.html#add-a-new-project">13.1. Add a new project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="projects.html#work-with-permissions">13.2. Work with Permissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="projects.html#work-with-notifications">13.3. Work with Notifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="projects.html#work-with-job-templates">13.4. Work with Job Templates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="projects.html#work-with-schedules">13.5. Work with Schedules</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="inventories.html">14. Inventories</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="inventories.html#smart-inventories">14.1. Smart Inventories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inventories.html#add-a-new-inventory">14.2. Add a new inventory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inventories.html#running-ad-hoc-commands">14.3. Running Ad Hoc Commands</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="job_templates.html">15. Job Templates</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="job_templates.html#create-a-job-template">15.1. Create a Job Template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="job_templates.html#add-permissions">15.2. Add Permissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="job_templates.html#work-with-notifications">15.3. Work with Notifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="job_templates.html#view-completed-jobs">15.4. View Completed Jobs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="job_templates.html#scheduling">15.5. Scheduling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="job_templates.html#surveys">15.6. Surveys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="job_templates.html#launch-a-job-template">15.7. Launch a Job Template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="job_templates.html#copy-a-job-template">15.8. Copy a Job Template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="job_templates.html#scan-job-templates">15.9. Scan Job Templates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="job_templates.html#fact-caching">15.10. Fact Caching</a></li>
+<li class="toctree-l2"><a class="reference internal" href="job_templates.html#utilizing-cloud-credentials">15.11. Utilizing Cloud Credentials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="job_templates.html#provisioning-callbacks">15.12. Provisioning Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="job_templates.html#extra-variables">15.13. Extra Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="workflow_templates.html">16. Workflow Job Templates</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="workflow_templates.html#create-a-workflow-template">16.1. Create a Workflow Template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflow_templates.html#work-with-permissions">16.2. Work with Permissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflow_templates.html#work-with-notifications">16.3. Work with Notifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflow_templates.html#work-with-schedules">16.4. Work with Schedules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflow_templates.html#surveys">16.5. Surveys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflow_templates.html#workflow-visualizer">16.6. Workflow Visualizer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflow_templates.html#launch-a-workflow-job-template">16.7. Launch a Workflow Job Template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflow_templates.html#copy-a-workflow-job-template">16.8. Copy a Workflow Job Template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflow_templates.html#extra-variables">16.9. Extra Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="instance_groups.html">17. Instance Groups</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="instance_groups.html#create-an-instance-group">17.1. Create an instance group</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="jobs.html">18. Jobs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="jobs.html#job-details-inventory-sync">18.1. Job Details - Inventory Sync</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jobs.html#job-details-scm">18.2. Job Details - SCM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jobs.html#job-details-playbook-run">18.3. Job Details - Playbook Run</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jobs.html#at-capacity-determination-and-job-impact">18.4. Ansible Tower Capacity Determination and Job Impact</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="notifications.html">19. Notifications</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="notifications.html#notifier-hierarchy">19.1. Notifier Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notifications.html#workflow">19.2. Workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notifications.html#create-a-notification-template">19.3. Create a Notification Template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notifications.html#notification-types">19.4. Notification Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notifications.html#configuring-the-towerhost-hostname">19.5. Configuring the <code class="docutils literal"><span class="pre">towerhost</span></code> hostname</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="workflows.html">20. Workflows</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="workflows.html#extra-variables">20.1. Extra Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflows.html#workflow-states">20.2. Workflow States</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflows.html#role-based-access-controls">20.3. Role-Based Access Controls</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="insights.html">21. Setting up an Insights Project</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="insights.html#create-insights-credential">21.1. Create Insights Credential</a></li>
+<li class="toctree-l2"><a class="reference internal" href="insights.html#create-an-insights-project">21.2. Create an Insights Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="insights.html#create-insights-inventory">21.3. Create Insights Inventory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="insights.html#create-a-scan-project">21.4. Create a Scan Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="insights.html#create-a-scan-job-template">21.5. Create a Scan Job Template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="insights.html#remediate-insights-inventory">21.6. Remediate Insights Inventory</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="best_practices.html">22. Best Practices</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="best_practices.html#use-source-control">22.1. Use Source Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="best_practices.html#ansible-file-and-directory-structure">22.2. Ansible file and directory structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="best_practices.html#use-dynamic-inventory-sources">22.3. Use Dynamic Inventory Sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="best_practices.html#variable-management-for-inventory">22.4. Variable Management for Inventory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="best_practices.html#autoscaling">22.5. Autoscaling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="best_practices.html#larger-host-counts">22.6. Larger Host Counts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="best_practices.html#continuous-integration-continuous-deployment">22.7. Continuous integration / Continuous Deployment</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="security.html">23. Security</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="security.html#playbook-access-and-information-sharing">23.1. Playbook Access and Information Sharing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="security.html#role-based-access-controls">23.2. Role-Based Access Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="security.html#function-of-roles-editing-and-creating">23.3. Function of roles: editing and creating</a></li>
+</ul>
+</li>
+</ul>
+
+        
+
+<div class="DocSite-sideNav ansibleNav">
+    <ul class="">
+    <li><a href="https://www.ansible.com/ansiblefest" target="_blank">AnsibleFest</a></li>
+    <li><a href="https://www.ansible.com/tower" target="_blank">Products</a></li>
+    <li><a href="https://www.ansible.com/community" target="_blank">Community</a></li>
+    <li><a href="https://www.ansible.com/webinars-training" target="_blank">Webinars & Training</a></li>
+    <li><a href="https://www.ansible.com/blog" target="_blank">Blog</a></li>
+    </ul>
+</div>
+
+    <!-- changeable widget -->
+    <div id="sideBanner">
+    <br/>
+    <a href="http://www.ansible.com/tower-docs-left?utm_source=docs">
+<img style="border-width:0px;" src="https://cdn2.hubspot.net/hubfs/330046/docs-graphics/ASB-tower-docs-left-rail.png" />
+    </a>
+</div>
+
+
+
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top">
+        <i data-toggle="wy-nav-top" class="icon icon-reorder"></i>
+        <a href="https://docs.ansible.com/">Ansible Tower User Guide</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+
+    <!--        <div class="DocSiteBanner">
+                <a class="DocSiteBanner-imgWrapper"
+                    href="http://www.ansible.com/tower-docs-top?utm_source=tower-docs">
+                    <img src="https://cdn2.hubspot.net/hubfs/330046/docs-graphics/ASB-tower-docs-top-left.png">
+                </a>
+                <a class="DocSiteBanner-imgWrapper"
+                    href="http://www.ansible.com/tower-docs-top?utm_source=tower-docs">
+                    <img src="https://cdn2.hubspot.net/hubfs/330046/docs-graphics/ASB-tower-docs-top-right.png">
+                </a>
+            </div> -->
+
+          <ul class="wy-breadcrumbs">
+    <li><a href="http://docs.ansible.com/" <title>Ansible Docs Home</title></a>&raquo;</li>
+    <li><a href="http://docs.ansible.com/ansible-tower/" <title>Ansible Tower Docs</title></a>&raquo;</li>
+    <li><a href="index.html#" <title> &mdash; Ansible Tower User Guide v3.3.1</title></a> &raquo;</li>
+    <!--  <li><a href="">Ansible Tower User Guide v3.3.1</a></li> -->
+</ul>
+<hr/>
+
+          <div id="page-content">
+          
+  <div class="section" id="ansible-tower-user-guide-versionshortest">
+<span id="ug-start"></span><h1>Ansible Tower User Guide v3.3.1<a class="headerlink" href="index.html#ansible-tower-user-guide-versionshortest" title="Permalink to this headline">¶</a></h1>
+<p>Thank you for your interest in Red Hat Ansible Tower. Ansible Tower is a commercial offering that helps teams manage complex multi-tier deployments by adding control, knowledge, and delegation to Ansible-powered environments.</p>
+<p>The <em>Ansible Tower User Guide</em> discusses all of the functionality available in Ansible Tower and assumes moderate familiarity with Ansible, including concepts such as <strong>Playbooks</strong>, <strong>Variables</strong>, and <strong>Tags</strong>. For more information on these and other Ansible concepts, please see the Ansible documentation at <a class="reference external" href="http://docs.ansible.com/">http://docs.ansible.com/</a>. This document has been updated to include information for the latest release of Ansible Tower 3.3.1.</p>
+<p><strong>We Need Feedback!</strong></p>
+<p>If you spot a typo in this documentation, or if you have thought of a way to make this manual better, we would love to hear from you! Please send an email to: <a class="reference external" href="https://docs.ansible.com/cdn-cgi/l/email-protection#45212a2636636676727e636670777e6366717d7e242b362c272920636671737e262a28">docs<span>&#64;</span>ansible<span>&#46;</span>com</a></p>
+<p>If you have a suggestion, try to be as specific as possible when describing it. If you have found an error, please include the manual&#8217;s title, chapter number/section number, and some of the surrounding text so we can find it easily. We may not be able to respond to every message sent to us, but you can be sure that we will be reading them all!</p>
+<div class="text-right" style="margin-right:60px;"><p>Ansible Tower Version 3.3.1; October 25, 2018; <a class="reference external" href="https://access.redhat.com/">https://access.redhat.com/</a></p>
+</div><div class="toctree-wrapper compound">
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="index.html#">Ansible Tower User Guide v3.3.1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">1. Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#real-time-playbook-output-and-exploration">1.1. Real-time Playbook Output and Exploration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#push-button-automation">1.2. &#8220;Push Button&#8221; Automation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#enhanced-and-simplifed-role-based-access-control-and-auditing">1.3. Enhanced and Simplifed Role-Based Access Control and Auditing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#cloud-autoscaling-flexibility">1.4. Cloud &amp; Autoscaling Flexibility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#the-ideal-restful-api">1.5. The Ideal RESTful API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#backup-and-restore">1.6. Backup and Restore</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#ansible-galaxy-integration">1.7. Ansible Galaxy Integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#inventory-support-for-openstack">1.8. Inventory Support for OpenStack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#remote-command-execution">1.9. Remote Command Execution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#system-tracking">1.10. System Tracking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#integrated-notifications">1.11. Integrated Notifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#satellite-and-cloudforms-integration">1.12. Satellite and CloudForms Integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#run-time-job-customization">1.13. Run-time Job Customization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#red-hat-insights-integration">1.14. Red Hat Insights Integration</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="license-support.html">2. Tower Licensing, Updates, and Support</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="license-support.html#support">2.1. Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license-support.html#trial-evaluation">2.2. Trial / Evaluation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license-support.html#subscription-types">2.3. Subscription Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license-support.html#licenses-and-node-counts">2.4. Licenses and Node Counts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license-support.html#license-features">2.5. License Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="license-support.html#tower-component-licenses">2.6. Tower Component Licenses</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="logging_in.html">3. Logging In</a></li>
+<li class="toctree-l1"><a class="reference internal" href="import_license.html">4. Import a License</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="import_license.html#adding-a-tower-license-manually">4.1. Adding a Tower License Manually</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="main_menu.html">5. The Tower User Interface</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="main_menu.html#activity-streams">5.1. Activity Streams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main_menu.html#views">5.2. Views</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main_menu.html#resources-and-access">5.3. Resources and Access</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main_menu.html#tower-administration-menu">5.4. Tower Administration Menu</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="search_sort.html">6. Search</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="search_sort.html#searching-tips">6.1. Searching Tips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="search_sort.html#sort">6.2. Sort</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="organizations.html">7. Organizations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="organizations.html#creating-a-new-organization">7.1. Creating a New Organization</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="users.html">8. Users</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="users.html#create-a-user">8.1. Create a User</a></li>
+<li class="toctree-l2"><a class="reference internal" href="users.html#user-types-quick-view">8.2. User Types - Quick View</a></li>
+<li class="toctree-l2"><a class="reference internal" href="users.html#users-organizations">8.3. Users - Organizations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="users.html#users-teams">8.4. Users - Teams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="users.html#users-permissions">8.5. Users - Permissions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="teams.html">9. Teams</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="teams.html#create-a-team">9.1. Create a Team</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="credentials.html">10. Credentials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="credentials.html#understanding-how-credentials-work">10.1. Understanding How Credentials Work</a></li>
+<li class="toctree-l2"><a class="reference internal" href="credentials.html#getting-started-with-credentials">10.2. Getting Started with Credentials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="credentials.html#add-a-new-credential">10.3. Add a New Credential</a></li>
+<li class="toctree-l2"><a class="reference internal" href="credentials.html#credential-types">10.4. Credential Types</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="credential_types.html">11. Custom Credential Types</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="credential_types.html#backwards-compatible-api-considerations">11.1. Backwards-Compatible API Considerations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="credential_types.html#getting-started-with-credential-types">11.2. Getting Started with Credential Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="credential_types.html#create-a-new-credential-type">11.3. Create a New Credential Type</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="applications_auth.html">12. Applications</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="applications_auth.html#getting-started-with-applications">12.1. Getting Started with Applications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="applications_auth.html#create-a-new-application">12.2. Create a new application</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="projects.html">13. Projects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="projects.html#add-a-new-project">13.1. Add a new project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="projects.html#work-with-permissions">13.2. Work with Permissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="projects.html#work-with-notifications">13.3. Work with Notifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="projects.html#work-with-job-templates">13.4. Work with Job Templates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="projects.html#work-with-schedules">13.5. Work with Schedules</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="inventories.html">14. Inventories</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="inventories.html#smart-inventories">14.1. Smart Inventories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inventories.html#add-a-new-inventory">14.2. Add a new inventory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="inventories.html#running-ad-hoc-commands">14.3. Running Ad Hoc Commands</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="job_templates.html">15. Job Templates</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="job_templates.html#create-a-job-template">15.1. Create a Job Template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="job_templates.html#add-permissions">15.2. Add Permissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="job_templates.html#work-with-notifications">15.3. Work with Notifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="job_templates.html#view-completed-jobs">15.4. View Completed Jobs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="job_templates.html#scheduling">15.5. Scheduling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="job_templates.html#surveys">15.6. Surveys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="job_templates.html#launch-a-job-template">15.7. Launch a Job Template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="job_templates.html#copy-a-job-template">15.8. Copy a Job Template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="job_templates.html#scan-job-templates">15.9. Scan Job Templates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="job_templates.html#fact-caching">15.10. Fact Caching</a></li>
+<li class="toctree-l2"><a class="reference internal" href="job_templates.html#utilizing-cloud-credentials">15.11. Utilizing Cloud Credentials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="job_templates.html#provisioning-callbacks">15.12. Provisioning Callbacks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="job_templates.html#extra-variables">15.13. Extra Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="workflow_templates.html">16. Workflow Job Templates</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="workflow_templates.html#create-a-workflow-template">16.1. Create a Workflow Template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflow_templates.html#work-with-permissions">16.2. Work with Permissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflow_templates.html#work-with-notifications">16.3. Work with Notifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflow_templates.html#work-with-schedules">16.4. Work with Schedules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflow_templates.html#surveys">16.5. Surveys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflow_templates.html#workflow-visualizer">16.6. Workflow Visualizer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflow_templates.html#launch-a-workflow-job-template">16.7. Launch a Workflow Job Template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflow_templates.html#copy-a-workflow-job-template">16.8. Copy a Workflow Job Template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflow_templates.html#extra-variables">16.9. Extra Variables</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="instance_groups.html">17. Instance Groups</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="instance_groups.html#create-an-instance-group">17.1. Create an instance group</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="jobs.html">18. Jobs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="jobs.html#job-details-inventory-sync">18.1. Job Details - Inventory Sync</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jobs.html#job-details-scm">18.2. Job Details - SCM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jobs.html#job-details-playbook-run">18.3. Job Details - Playbook Run</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jobs.html#at-capacity-determination-and-job-impact">18.4. Ansible Tower Capacity Determination and Job Impact</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="notifications.html">19. Notifications</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="notifications.html#notifier-hierarchy">19.1. Notifier Hierarchy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notifications.html#workflow">19.2. Workflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notifications.html#create-a-notification-template">19.3. Create a Notification Template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notifications.html#notification-types">19.4. Notification Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notifications.html#configuring-the-towerhost-hostname">19.5. Configuring the <code class="docutils literal"><span class="pre">towerhost</span></code> hostname</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="workflows.html">20. Workflows</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="workflows.html#extra-variables">20.1. Extra Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflows.html#workflow-states">20.2. Workflow States</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workflows.html#role-based-access-controls">20.3. Role-Based Access Controls</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="insights.html">21. Setting up an Insights Project</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="insights.html#create-insights-credential">21.1. Create Insights Credential</a></li>
+<li class="toctree-l2"><a class="reference internal" href="insights.html#create-an-insights-project">21.2. Create an Insights Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="insights.html#create-insights-inventory">21.3. Create Insights Inventory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="insights.html#create-a-scan-project">21.4. Create a Scan Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="insights.html#create-a-scan-job-template">21.5. Create a Scan Job Template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="insights.html#remediate-insights-inventory">21.6. Remediate Insights Inventory</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="best_practices.html">22. Best Practices</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="best_practices.html#use-source-control">22.1. Use Source Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="best_practices.html#ansible-file-and-directory-structure">22.2. Ansible file and directory structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="best_practices.html#use-dynamic-inventory-sources">22.3. Use Dynamic Inventory Sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="best_practices.html#variable-management-for-inventory">22.4. Variable Management for Inventory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="best_practices.html#autoscaling">22.5. Autoscaling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="best_practices.html#larger-host-counts">22.6. Larger Host Counts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="best_practices.html#continuous-integration-continuous-deployment">22.7. Continuous integration / Continuous Deployment</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="security.html">23. Security</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="security.html#playbook-access-and-information-sharing">23.1. Playbook Access and Information Sharing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="security.html#role-based-access-controls">23.2. Role-Based Access Controls</a></li>
+<li class="toctree-l2"><a class="reference internal" href="security.html#function-of-roles-editing-and-creating">23.3. Function of roles: editing and creating</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="index">
+<h2>Index<a class="headerlink" href="index.html#index" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="copyright-2018-red-hat-inc">
+<h2>Copyright © 2018 Red Hat, Inc.<a class="headerlink" href="index.html#copyright-2018-red-hat-inc" title="Permalink to this headline">¶</a></h2>
+<p>Ansible, Ansible Tower, Red Hat, and Red Hat Enterprise Linux are trademarks of Red Hat, Inc., registered in the United States and other countries.</p>
+<p>If you distribute this document, or a modified version of it, you must provide attribution to Red Hat, Inc. and provide a link to the original version.</p>
+<p><strong>Third Party Rights</strong></p>
+<p>Ubuntu and Canonical are registered trademarks of Canonical Ltd.</p>
+<p>The CentOS Project is copyright protected. The CentOS Marks are trademarks of Red Hat, Inc. (“Red Hat”).</p>
+<p>Microsoft, Windows, Windows Azure, and Internet Explore are trademarks of Microsoft, Inc.</p>
+<p>VMware is a registered trademark or trademark of VMware, Inc.</p>
+<p>Rackspace trademarks, service marks, logos and domain names are either common-law trademarks/service marks or registered trademarks/service marks of Rackspace US, Inc., or its subsidiaries, and are protected by trademark and other laws in the United States and other countries.</p>
+<p>Amazon Web Services&#8221;, &#8220;AWS&#8221;, &#8220;Amazon EC2&#8221;, and &#8220;EC2”, are trademarks of Amazon Web Services, Inc. or its affiliates.</p>
+<p>OpenStack™ and OpenStack logo are trademarks of OpenStack, LLC.</p>
+<p>Chrome™ and Google Compute Engine™ service registered trademarks of Google Inc.</p>
+<p>Safari® is a registered trademark of Apple, Inc.</p>
+<p>Firefox® is a registered trademark of the Mozilla Foundation.</p>
+<p>All other trademarks are the property of their respective owners.</p>
+</div>
+</div>
+
+
+          </div>
+          <div id="search-results"><gcse:searchresults-only></gcse:searchresults-only></div>
+          <footer>
+  
+    <div class="rst-footer-buttons">
+      
+        <a href="overview.html" class="btn btn-neutral float-right" title="1. Overview"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <p>
+    Copyright © 2018 Red Hat, Inc. 
+    <br>
+  </p>
+
+<p>
+  Red Hat Ansible Tower docs are generated using <A HREF="http://sphinx-doc.org/">Sphinx</A> using a theme provided by <a href="http://readthedocs.org">Read the Docs</a>.
+</p>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+<!-- begin analytics -->
+<script data-cfasync="false" src="email-decode.min.js"></script><script type="text/javascript">
+var _hsq = _hsq || [];
+_hsq.push(["setContentType", "standard-page"]);
+        (function(d,s,i,r) {
+        if (d.getElementById(i)){return;}
+        var n = d.createElement(s),e = document.getElementsByTagName(s)[0];
+        n.id=i;n.src = '//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/330046.js';
+        e.parentNode.insertBefore(n, e);
+        })(document, "script", "hs-analytics",300000);
+</script>
+<!-- end analytics -->
+
+<script type="text/javascript">
+if (("undefined" !== typeof _satellite) && ("function" === typeof _satellite.pageBottom)) {
+_satellite.pageBottom();
+}
+</script>
+
+</body>
+</html>

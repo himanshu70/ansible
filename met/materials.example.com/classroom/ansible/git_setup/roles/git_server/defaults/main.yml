@@ -1,0 +1,14 @@
+    # names of repositories to create
+    git_project: project
+
+    # list of authorized_keys files to import
+    # Normally should not be provided by the role, but by
+    # the Ansible playbook and its files to allow maximum
+    # reuse.
+
+#    git_authorized_keys:
+#     - authorized_keys/dummy-id_rsa.pub
+
+    # list of packages to install to set up the Git server
+    git_packages:
+      - git

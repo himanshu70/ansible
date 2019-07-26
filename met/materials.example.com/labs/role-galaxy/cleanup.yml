@@ -1,0 +1,27 @@
+---
+- name: Cleanup from lab
+  hosts: workstation.lab.example.com
+  gather_facts: no
+  vars:
+    role_tar_balls:
+      - name: bash_env
+        tar: bash_env.tar
+  tasks:
+    - name: Remove old repo artifacts
+      file:
+        path: /home/git/student/{{ item.name }}
+        state: absent
+      loop: "{{ role_tar_balls }}"
+
+
+- name: Remove student2 user
+  hosts: servera.lab.example.com
+  gather_facts: no
+  tasks:
+    - name: Remove student2 user
+      user:
+        name: student2
+        state: absent
+        force: yes
+        remove: yes
+

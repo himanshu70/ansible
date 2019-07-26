@@ -1,0 +1,17 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /classroom/ansible/apache-setup-review/templates</title>
+ </head>
+ <body>
+<h1>Index of /classroom/ansible/apache-setup-review/templates</h1>
+  <table>
+   <tr><th valign="top"><img src="http://materials.example.com/icons/blank.gif" alt="[ICO]"></th><th><a href="index.html?C=N%3BO=A">Name</a></th><th><a href="index.html?C=M%3BO=D">Last modified</a></th><th><a href="index.html?C=S%3BO=A">Size</a></th><th><a href="index.html?C=D%3BO=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="../index.html">Parent Directory</a>       </td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/unknown.gif" alt="[   ]"></td><td><a href="haproxy.cfg.j2">haproxy.cfg.j2</a>         </td><td align="right">2019-01-10 17:35  </td><td align="right">700 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/text.gif" alt="[TXT]"></td><td><a href="httpd.conf.j2">httpd.conf.j2</a>          </td><td align="right">2019-01-10 17:35  </td><td align="right">1.5K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/text.gif" alt="[TXT]"></td><td><a href="index.html.j2">index.html.j2</a>          </td><td align="right">2019-01-10 17:35  </td><td align="right">262 </td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+</body></html>

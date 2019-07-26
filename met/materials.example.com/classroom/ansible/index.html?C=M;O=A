@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /classroom/ansible</title>
+ </head>
+ <body>
+<h1>Index of /classroom/ansible</h1>
+  <table>
+   <tr><th valign="top"><img src="http://materials.example.com/icons/blank.gif" alt="[ICO]"></th><th><a href="index.html?C=N%3BO=A">Name</a></th><th><a href="index.html?C=M%3BO=D">Last modified</a></th><th><a href="index.html?C=S%3BO=A">Size</a></th><th><a href="index.html?C=D%3BO=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="http://materials.example.com/classroom/">Parent Directory</a>       </td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/text.gif" alt="[TXT]"></td><td><a href="apache-setup.yml">apache-setup.yml</a>       </td><td align="right">2019-01-10 17:35  </td><td align="right">1.3K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/unknown.gif" alt="[   ]"></td><td><a href="clean.yml">clean.yml</a>              </td><td align="right">2019-01-10 17:35  </td><td align="right">515 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/text.gif" alt="[TXT]"></td><td><a href="index.html.j2">index.html.j2</a>          </td><td align="right">2019-01-10 17:35  </td><td align="right">311 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/unknown.gif" alt="[   ]"></td><td><a href="inventory">inventory</a>              </td><td align="right">2019-01-10 17:35  </td><td align="right">144 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/text.gif" alt="[TXT]"></td><td><a href="main.cf">main.cf</a>                </td><td align="right">2019-01-10 17:35  </td><td align="right"> 27K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/unknown.gif" alt="[   ]"></td><td><a href="notification.json">notification.json</a>      </td><td align="right">2019-01-10 17:35  </td><td align="right">574 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/unknown.gif" alt="[   ]"></td><td><a href="schema.yml">schema.yml</a>             </td><td align="right">2019-01-10 17:35  </td><td align="right">247 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/unknown.gif" alt="[   ]"></td><td><a href="schema2.yml">schema2.yml</a>            </td><td align="right">2019-01-10 17:35  </td><td align="right">252 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/unknown.gif" alt="[   ]"></td><td><a href="schema_review.yml">schema_review.yml</a>      </td><td align="right">2019-01-10 17:35  </td><td align="right">257 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/unknown.gif" alt="[   ]"></td><td><a href="survey.json">survey.json</a>            </td><td align="right">2019-01-10 17:35  </td><td align="right">551 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/unknown.gif" alt="[   ]"></td><td><a href="survey2.json">survey2.json</a>           </td><td align="right">2019-01-10 17:35  </td><td align="right">551 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/unknown.gif" alt="[   ]"></td><td><a href="survey_review.json">survey_review.json</a>     </td><td align="right">2019-01-10 17:35  </td><td align="right">563 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/compressed.gif" alt="[   ]"></td><td><a href="tower-backup-latest.tar.gz">tower-backup-latest...&gt;</a></td><td align="right">2019-01-10 17:35  </td><td align="right"> 60K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/unknown.gif" alt="[   ]"></td><td><a href="tower_api.yml">tower_api.yml</a>          </td><td align="right">2019-01-10 17:35  </td><td align="right">3.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/folder.gif" alt="[DIR]"></td><td><a href="DO410/index.html">DO410/</a>                 </td><td align="right">2019-07-22 17:00  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/folder.gif" alt="[DIR]"></td><td><a href="apache-setup-playbook/index.html">apache-setup-playbook/</a> </td><td align="right">2019-07-22 17:00  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/folder.gif" alt="[DIR]"></td><td><a href="apache-setup-review/index.html">apache-setup-review/</a>   </td><td align="right">2019-07-22 17:00  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/folder.gif" alt="[DIR]"></td><td><a href="git_setup/index.html">git_setup/</a>             </td><td align="right">2019-07-22 17:00  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/folder.gif" alt="[DIR]"></td><td><a href="ipa-setup/index.html">ipa-setup/</a>             </td><td align="right">2019-07-22 17:00  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+</body></html>

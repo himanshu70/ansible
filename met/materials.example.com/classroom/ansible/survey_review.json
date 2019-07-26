@@ -1,0 +1,18 @@
+{
+    "name": "What environment are you deploying ?",
+    "description": "The environment will be displayed at the bottom of the index page",
+    "spec": [
+        {
+        "type": "text",
+        "question_name": "What environment are you deploying ?",
+        "question_description": "The environment will be displayed at the bottom of the index page",
+        "variable": "environment_name",
+        "required": true,
+        "choices": "",
+        "new_question": true,
+        "min": 1,
+        "max": 40,
+        "default": "Development"
+        }
+    ]
+}

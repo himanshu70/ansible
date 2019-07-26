@@ -1,0 +1,91 @@
+---
+# This playbook installs HAProxy and HTTPd and configures it.
+#
+- name: Install hapxory and configure it.
+  hosts: all
+  remote_user: devops
+  become: yes
+  handlers:
+    - name: restart haproxy
+      service: name=haproxy state=restarted
+
+  tasks:
+    - name: Remove httpd
+      yum: name=httpd state=absent
+
+    - name: Install haproxy
+      yum: name={{ item }} state=present
+      with_items:
+        - haproxy
+      when: inventory_hostname in groups['lbserver']
+
+    - name: Configure the haproxy cnf file
+      template:
+        src: templates/haproxy.cfg.j2
+        dest: /etc/haproxy/haproxy.cfg
+        owner: root
+        group: root
+        mode: 0644
+      notify: restart haproxy
+      when: inventory_hostname in groups['lbserver']
+
+    - name: Start the haproxy service
+      service: name=haproxy state=started enabled=yes
+      when: inventory_hostname in groups['lbserver']
+
+    - name: Install firewalld
+      yum:
+        name: firewalld
+        state: present
+      when: inventory_hostname in groups['lbserver']
+
+    - name: Start and enable firewalld
+      service:
+        name: firewalld
+        state: started
+        enabled: yes
+      when: inventory_hostname in groups['lbserver']
+
+    - name: Enable http in firewall
+      firewalld: service=http permanent=true state=enabled immediate=true
+      when: inventory_hostname in groups['lbserver']
+
+- name: Install httpd and configure it
+  hosts: webservers
+  remote_user: devops
+  become: yes
+  handlers:
+    - name: restart httpd
+      service: name=httpd state=restarted
+
+  tasks:
+
+    - name: Install Apache
+      yum: name=httpd state=present
+
+    - name: Install firewalld
+      yum:
+        name: firewalld
+        state: present
+
+    - name: Copy the index.html.j2
+      template:
+        src: templates/index.html.j2
+        dest: /var/www/html/index.html
+        owner: root
+        group: apache
+        mode: 0644
+      notify: restart httpd
+
+    - name: Start and enable firewalld
+      service:
+        name: firewalld
+        state: started
+        enabled: yes
+
+    - name: Enable http in firewall
+      firewalld: service=http permanent=true state=enabled immediate=true
+
+    - name: Start and enable httpd
+      service: name=httpd state=started enabled=yes
+

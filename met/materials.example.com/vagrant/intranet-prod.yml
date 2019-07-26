@@ -1,0 +1,41 @@
+- name: intranet services for production
+  hosts: servera.lab.example.com
+  remote_user: devops
+  become: yes
+  become_user: root
+  tasks:
+    - name: latest httpd version installed
+      yum:
+        name: httpd
+        state: latest
+    - name: latest firewalld version installed
+      yum:
+        name: firewalld
+        state: latest
+    - name: httpd enabled and started
+      service:
+        name: httpd
+        enabled: true
+        state: started
+    - name: firewalld enabled and started
+      service:
+        name: firewalld
+        enabled: true
+        state: started
+    - name: firewalld permits http service
+      firewalld:
+        service: http
+        permanent: true
+        state: enabled
+      notify:
+        - restart firewalld
+    - name: get source
+      git:
+        accept_hostkey: yes
+        repo: ssh://student@workstation/var/git/webapp.git
+        dest: /var/www/html
+  handlers:
+    - name: restart firewalld
+      service:
+        name: firewalld
+        state: restarted

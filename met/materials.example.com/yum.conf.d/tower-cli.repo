@@ -1,0 +1,5 @@
+[tower-cli]
+baseurl = http://content.example.com/tower3.3/x86_64/dvd/repos/edu-tower3.3-rpms
+enabled = true
+gpgcheck = false
+name = Remote classroom copy of required tower-cli 

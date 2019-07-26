@@ -1,0 +1,26 @@
+# remove_client.yml
+# Steve Bonneville <sbonnevi@redhat.com>
+
+# Not fully tested
+
+- hosts: all
+
+  vars:
+    ipa_server: utility.lab.example.com
+    ipa_domain: lab.example.com
+    ipa_realm: LAB.EXAMPLE.COM
+
+  tasks:
+
+    # Not idempotent, will blow up if not registered.
+
+    - name: Unregister system on FreeIPA server
+      command: >
+       ipa-client-install 
+       --uninstall
+       --unattended
+
+    - name: Unregister host account on FreeIPA server
+      command: ipa host-del {{ ansible_fqdn }} 
+      delegate_to: "{{ ipa_server }}"
+

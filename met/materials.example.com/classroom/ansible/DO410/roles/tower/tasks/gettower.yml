@@ -1,0 +1,8 @@
+---
+- name: Download Ansible Tower 3.3
+  unarchive:
+    src: http://content.example.com/tower3.3/x86_64/dvd/setup-bundle/ansible-tower-setup-bundle.el7.tar.gz
+    dest: /root
+    remote_src: True
+  tags:
+    - gettower

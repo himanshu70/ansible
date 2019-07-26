@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /classroom/ansible/git_setup</title>
+ </head>
+ <body>
+<h1>Index of /classroom/ansible/git_setup</h1>
+  <table>
+   <tr><th valign="top"><img src="http://materials.example.com/icons/blank.gif" alt="[ICO]"></th><th><a href="index.html?C=N%3BO=A">Name</a></th><th><a href="index.html?C=M%3BO=A">Last modified</a></th><th><a href="index.html?C=S%3BO=A">Size</a></th><th><a href="index.html?C=D%3BO=D">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="../index.html">Parent Directory</a>       </td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/text.gif" alt="[TXT]"></td><td><a href="git.yml">git.yml</a>                </td><td align="right">2019-01-10 17:35  </td><td align="right">1.5K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/unknown.gif" alt="[   ]"></td><td><a href="git_review.yml">git_review.yml</a>         </td><td align="right">2019-01-10 17:35  </td><td align="right">145 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/unknown.gif" alt="[   ]"></td><td><a href="git_setup.yml">git_setup.yml</a>          </td><td align="right">2019-01-10 17:35  </td><td align="right">446 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/unknown.gif" alt="[   ]"></td><td><a href="inventory">inventory</a>              </td><td align="right">2019-01-10 17:35  </td><td align="right"> 34 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/folder.gif" alt="[DIR]"></td><td><a href="keys/index.html">keys/</a>                  </td><td align="right">2019-07-22 17:00  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="http://materials.example.com/icons/folder.gif" alt="[DIR]"></td><td><a href="roles/index.html">roles/</a>                 </td><td align="right">2019-07-22 17:00  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+</body></html>

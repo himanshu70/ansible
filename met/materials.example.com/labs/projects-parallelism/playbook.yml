@@ -1,0 +1,17 @@
+- name: Update apache
+  hosts: webservers
+
+  tasks:
+    - name: Latest version of apache installed
+      yum:
+        name: httpd
+        state: latest
+      notify:
+        - Restart apache
+
+  handlers:
+    - name: Restart apache
+      service:
+        name: httpd
+        enabled: yes
+        state: restarted

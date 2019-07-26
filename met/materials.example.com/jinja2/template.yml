@@ -1,0 +1,18 @@
+---
+- hosts: localhost
+  name: This is a Playbook
+  connection: local
+
+  vars_files:
+    - vars/vars.yml
+
+  tasks:
+    - name: Get data CSV
+      get_url:
+        url: http://materials.example.com/jinja2/data.csv
+        dest: /tmp/data.csv
+
+    - name: render template
+      template:
+        src: /home/student/Ansible-Course/jinja2-lab/templates/solution.j2
+        dest: /tmp/ansible-report.txt
